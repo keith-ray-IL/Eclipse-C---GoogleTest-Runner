@@ -1,0 +1,9 @@
+145,76
+#beginning The Suite 3
+#starting fooTest1
+#success fooTest1 OK
+#starting fooTest4
+#error fooTest4 resistance is futile
+#starting fooTest2
+#failure fooTest2 ../src/Test.cpp:17 t.bar() == 41 expected:	42	but was:	41	
+#ending The Suite

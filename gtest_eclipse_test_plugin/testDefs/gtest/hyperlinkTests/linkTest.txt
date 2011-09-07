@@ -1,0 +1,12 @@
+231,34
+[----------] 3 tests from TestSuite
+[ RUN      ] TestSuite.GreenTest
+[       OK ] TestSuite.GreenTest
+[ RUN      ] TestSuite.FailureTest
+../src/sample1_unittest.cc:104: Failure
+Value of: Factorial(0)
+  Actual: 1
+Expected: 3
+[  FAILED  ] TestSuite.FailureTest
+[ RUN      ] TestSuite.ErrorTest
+terminate called after throwing an instance of 'std::exception'

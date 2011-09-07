@@ -1,0 +1,292 @@
+// <--this is a test comment block
+// caret are parse to indicate current cursor location for that test
+// 
+//test before function
+^void runTest(){
+	cute::suite s=make_suite_s();
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+//expected results
+void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+//test within functions
+void runTest(){
+	cute::suite s=make_suite_s();
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runT^est();
+}
+//expected results
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+int main(){
+    runTest();
+}
+//test at end
+void runTest(){
+	cute::suite s=make_suite_s();
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}^
+//expected results
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+
+//test at end2
+void runTest(){
+	cute::suite s=make_suite_s();
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+^
+//expected results
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+
+//test existing pushback 
+^void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(CUTE(dummyFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+//expected results
+void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(CUTE(dummyFunction));
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+//test pushback with functor taking in one parameter
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(functor(2));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+^
+//expected results
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(functor(2));
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+
+//test at end2 with pushback duplicated (checknameExist test)
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+^
+//expected results
+void runTest(){
+	cute::suite s=make_suite_s();
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runTest();
+}
+void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+
+//test shift out of preprocessor statement
+#include "cute.h"
+#inc^lude "ide_listener.h"
+#include "cute_runner.h"
+
+void thisIsATest() {
+	ASSERTM("start writing tests", false);	
+}
+
+void runSuite(){
+	cute::suite s;
+	//TODO add your test here
+	s.push_back(CUTE(thisIsATest));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runSuite();
+}
+
+
+
+//expected results
+#include "cute.h"
+void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+#include "ide_listener.h"
+#include "cute_runner.h"
+
+void thisIsATest() {
+	ASSERTM("start writing tests", false);	
+}
+
+void runSuite(){
+	cute::suite s;
+	//TODO add your test here
+	s.push_back(CUTE(thisIsATest));
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runSuite();
+}
+
+
+
+//test shift out of preprocessor statement at the end
+#include "cute.h"
+#include "ide_listener.h"^
+#include "cute_runner.h"
+
+void thisIsATest() {
+	ASSERTM("start writing tests", false);	
+}
+
+void runSuite(){
+	cute::suite s;
+	//TODO add your test here
+	s.push_back(CUTE(thisIsATest));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runSuite();
+}
+
+
+
+//expected results
+#include "cute.h"
+void newTestFunction(){
+	ASSERTM("start writing tests", false);
+}
+
+#include "ide_listener.h"
+#include "cute_runner.h"
+
+void thisIsATest() {
+	ASSERTM("start writing tests", false);	
+}
+
+void runSuite(){
+	cute::suite s;
+	//TODO add your test here
+	s.push_back(CUTE(thisIsATest));
+	s.push_back(CUTE(newTestFunction));
+	cute::ide_listener lis;
+	cute::makeRunner(lis)(s, "The Suite");
+}
+
+int main(){
+    runSuite();
+}
+
+
+
+//

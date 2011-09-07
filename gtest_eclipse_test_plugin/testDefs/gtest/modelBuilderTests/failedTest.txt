@@ -1,0 +1,8 @@
+Session{Suite(TestSuite, running, 1, 1, 0, 1, 0){Testcase(xUnitTest, failure, null, 84, Result(evaluated: `Factorial(-10) < 0`, expected: <true> but was: <false>, true, false))}}
+[----------] 1 test from TestSuite
+[ RUN      ] TestSuite.xUnitTest
+../src/sample1_unittest.cc:84: Failure
+Value of: Factorial(-10) < 0
+  Actual: false
+Expected: true
+[  FAILED  ] TestSuite.xUnitTest

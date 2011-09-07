@@ -1,0 +1,7 @@
+[----------] 1 test from TestSuite
+[ RUN      ] TestSuite.xUnitTest
+../src/sample1_unittest.cc:84: Failure
+Value of: Factorial(-10) < 0
+  Actual: false
+Expected: true
+[  FAILED  ] TestSuite.xUnitTest

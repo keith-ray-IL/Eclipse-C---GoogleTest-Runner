@@ -1,0 +1,6 @@
+Session{Suite(TestSuite, running, 1, 1, 0, 0, 1){Testcase(xUnitTest, error, null, -1, Result(exception of unknown type))}}
+[----------] 1 test from TestSuite
+[ RUN      ] TestSuite.xUnitTest
+../src/gtest.cc:3627: Failure
+Failed
+exception of unknown type thrown.

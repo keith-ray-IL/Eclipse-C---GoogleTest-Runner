@@ -1,0 +1,2 @@
+#starting xUnitTest
+#failure xUnitTest ../src/sample1_unittest.cc:84 Factorial(-10) < 0 expected: true but was: false

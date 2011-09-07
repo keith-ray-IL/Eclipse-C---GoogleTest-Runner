@@ -1,0 +1,11 @@
+Session{Suite(The Lib Suite, error, 4, 4, 1, 2, 1){Testcase(test, success, null, -1, Result(OK))Testcase(test, failure, null, 7, Result(false, null, null))Testcase(test1, failure, null, 6, Result(Hallo expected: 42 but was: 43, 42, 43))Testcase(test4, error, null, -1, Result(resistance is futile))}}
+#beginning The Lib Suite 4
+#starting test
+#success test OK
+#starting test
+#failure test ../src/Test.cpp:7 false
+#starting test1
+#failure test1 ../src/Test.cpp:6 Hallo expected:	42	but was:	43	
+#starting test4
+#error test4 resistance is futile
+#ending The Lib Suite

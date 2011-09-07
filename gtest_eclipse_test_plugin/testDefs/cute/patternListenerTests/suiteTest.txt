@@ -1,0 +1,6 @@
+#sessionStart
+#beginning TestSuite1 42
+#ending TestSuite1
+#beginning TypedTest/0, where TypeParam = TestType 1
+#ending TypedTest/0, where TypeParam = TestType
+#sessionEnd

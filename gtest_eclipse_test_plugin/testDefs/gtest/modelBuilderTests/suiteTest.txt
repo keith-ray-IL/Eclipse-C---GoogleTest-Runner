@@ -1,0 +1,4 @@
+Session{Suite(TestSuite1, success, 42, 0, 0, 0, 0){}}
+[==========] Running 42 tests from 1 test case.
+[----------] 42 tests from TestSuite1
+[==========] 42 tests from 1 test case ran.

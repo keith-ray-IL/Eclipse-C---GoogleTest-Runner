@@ -1,0 +1,36 @@
+<project name="Cute Automated Tests" default="run" basedir=".">
+
+	<property name="library-file" value="${eclipse-home}/plugins/org.eclipse.test/library.xml"/>
+	<property name="cute-loc" value="${eclipse-home}/cute_folder"/>
+	<property name="failed" value="false"/>
+
+
+	<target name="init">
+		<tstamp/>
+	</target>
+
+	<target name="cleanup">
+	</target>
+
+	<target name="run" depends="init,suite">
+		<ant target="collect" antfile="${library-file}" dir="${eclipse-home}">
+			<property name="includes" value="ch*.xml"/>
+			<property name="output-file" value="ch.hsr.ifs.cute.test.xml"/>
+		</ant>
+	</target>
+	
+	<target name="cute-tests" depends="init">
+		<ant target="core-test" antfile="${library-file}" dir="${eclipse-home}">
+			<property name="data-dir" value="${cute-loc}"/>
+			<property name="plugin-name" value="ch.hsr.ifs.cutelauncher.test"/>
+			<property name="classname" value="ch.hsr.ifs.cutelauncher.test.AllTests"/>
+			<property name="failOnProblem" value="true"/>
+		</ant>
+	</target>
+
+	<target name="suite">
+		<antcall target="cute-tests"/>
+ 	
+	</target>
+
+</project>

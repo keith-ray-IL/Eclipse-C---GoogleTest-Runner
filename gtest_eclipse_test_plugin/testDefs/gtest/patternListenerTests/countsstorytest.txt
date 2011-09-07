@@ -1,0 +1,1606 @@
+Running main() from gtest_main.cc
+[==========] Running 2 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from GeTest (0 ms total)
+
+[----------] 2 tests from GtTest
+[ RUN      ] GtTest.ImplementsGreaterThan
+[       OK ] GtTest.ImplementsGreaterThan (0 ms)
+[ RUN      ] GtTest.CanDescribeSelf
+[       OK ] GtTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from GtTest (0 ms total)
+
+[----------] 2 tests from LeTest
+[ RUN      ] LeTest.ImplementsLessThanOrEqual
+[       OK ] LeTest.ImplementsLessThanOrEqual (0 ms)
+[ RUN      ] LeTest.CanDescribeSelf
+[       OK ] LeTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from LeTest (0 ms total)
+
+[----------] 2 tests from LtTest
+[ RUN      ] LtTest.ImplementsLessThan
+[       OK ] LtTest.ImplementsLessThan (0 ms)
+[ RUN      ] LtTest.CanDescribeSelf
+[       OK ] LtTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from LtTest (0 ms total)
+
+[----------] 2 tests from NeTest
+[ RUN      ] NeTest.ImplementsNotEqual
+[       OK ] NeTest.ImplementsNotEqual (0 ms)
+[ RUN      ] NeTest.CanDescribeSelf
+[       OK ] NeTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from NeTest (0 ms total)
+
+[----------] 5 tests from IsNullTest
+[ RUN      ] IsNullTest.MatchesNullPointer
+[       OK ] IsNullTest.MatchesNullPointer (0 ms)
+[ RUN      ] IsNullTest.LinkedPtr
+[       OK ] IsNullTest.LinkedPtr (0 ms)
+[ RUN      ] IsNullTest.ReferenceToConstLinkedPtr
+[       OK ] IsNullTest.ReferenceToConstLinkedPtr (0 ms)
+[ RUN      ] IsNullTest.ReferenceToConstScopedPtr
+[       OK ] IsNullTest.ReferenceToConstScopedPtr (0 ms)
+[ RUN      ] IsNullTest.CanDescribeSelf
+[       OK ] IsNullTest.CanDescribeSelf (0 ms)
+[----------] 5 tests from IsNullTest (31 ms total)
+
+[----------] 5 tests from NotNullTest
+[ RUN      ] NotNullTest.MatchesNonNullPointer
+[       OK ] NotNullTest.MatchesNonNullPointer (0 ms)
+[ RUN      ] NotNullTest.LinkedPtr
+[       OK ] NotNullTest.LinkedPtr (0 ms)
+[ RUN      ] NotNullTest.ReferenceToConstLinkedPtr
+[       OK ] NotNullTest.ReferenceToConstLinkedPtr (0 ms)
+[ RUN      ] NotNullTest.ReferenceToConstScopedPtr
+[       OK ] NotNullTest.ReferenceToConstScopedPtr (0 ms)
+[ RUN      ] NotNullTest.CanDescribeSelf
+[       OK ] NotNullTest.CanDescribeSelf (0 ms)
+[----------] 5 tests from NotNullTest (16 ms total)
+
+[----------] 4 tests from RefTest
+[ RUN      ] RefTest.MatchesSameVariable
+[       OK ] RefTest.MatchesSameVariable (0 ms)
+[ RUN      ] RefTest.CanDescribeSelf
+[       OK ] RefTest.CanDescribeSelf (0 ms)
+[ RUN      ] RefTest.CanBeUsedAsMatcherForConstReference
+[       OK ] RefTest.CanBeUsedAsMatcherForConstReference (0 ms)
+[ RUN      ] RefTest.IsCovariant
+[       OK ] RefTest.IsCovariant (0 ms)
+[----------] 4 tests from RefTest (0 ms total)
+
+[----------] 2 tests from StrEqTest
+[ RUN      ] StrEqTest.MatchesEqualString
+[       OK ] StrEqTest.MatchesEqualString (0 ms)
+[ RUN      ] StrEqTest.CanDescribeSelf
+[       OK ] StrEqTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StrEqTest (0 ms total)
+
+[----------] 2 tests from StrNeTest
+[ RUN      ] StrNeTest.MatchesUnequalString
+[       OK ] StrNeTest.MatchesUnequalString (0 ms)
+[ RUN      ] StrNeTest.CanDescribeSelf
+[       OK ] StrNeTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StrNeTest (0 ms total)
+
+[----------] 3 tests from StrCaseEqTest
+[ RUN      ] StrCaseEqTest.MatchesEqualStringIgnoringCase
+[       OK ] StrCaseEqTest.MatchesEqualStringIgnoringCase (0 ms)
+[ RUN      ] StrCaseEqTest.MatchesEqualStringWith0IgnoringCase
+[       OK ] StrCaseEqTest.MatchesEqualStringWith0IgnoringCase (0 ms)
+[ RUN      ] StrCaseEqTest.CanDescribeSelf
+[       OK ] StrCaseEqTest.CanDescribeSelf (0 ms)
+[----------] 3 tests from StrCaseEqTest (0 ms total)
+
+[----------] 2 tests from StrCaseNeTest
+[ RUN      ] StrCaseNeTest.MatchesUnequalStringIgnoringCase
+[       OK ] StrCaseNeTest.MatchesUnequalStringIgnoringCase (0 ms)
+[ RUN      ] StrCaseNeTest.CanDescribeSelf
+[       OK ] StrCaseNeTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StrCaseNeTest (0 ms total)
+
+[----------] 3 tests from HasSubstrTest
+[ RUN      ] HasSubstrTest.WorksForStringClasses
+[       OK ] HasSubstrTest.WorksForStringClasses (0 ms)
+[ RUN      ] HasSubstrTest.WorksForCStrings
+[       OK ] HasSubstrTest.WorksForCStrings (0 ms)
+[ RUN      ] HasSubstrTest.CanDescribeSelf
+[       OK ] HasSubstrTest.CanDescribeSelf (0 ms)
+[----------] 3 tests from HasSubstrTest (0 ms total)
+
+[----------] 5 tests from KeyTest
+[ RUN      ] KeyTest.CanDescribeSelf
+[       OK ] KeyTest.CanDescribeSelf (0 ms)
+[ RUN      ] KeyTest.MatchesCorrectly
+[       OK ] KeyTest.MatchesCorrectly (0 ms)
+[ RUN      ] KeyTest.SafelyCastsInnerMatcher
+[       OK ] KeyTest.SafelyCastsInnerMatcher (0 ms)
+[ RUN      ] KeyTest.InsideContainsUsingMap
+[       OK ] KeyTest.InsideContainsUsingMap (0 ms)
+[ RUN      ] KeyTest.InsideContainsUsingMultimap
+[       OK ] KeyTest.InsideContainsUsingMultimap (0 ms)
+[----------] 5 tests from KeyTest (0 ms total)
+
+[----------] 6 tests from PairTest
+[ RUN      ] PairTest.Typing
+[       OK ] PairTest.Typing (0 ms)
+[ RUN      ] PairTest.CanDescribeSelf
+[       OK ] PairTest.CanDescribeSelf (0 ms)
+[ RUN      ] PairTest.CanExplainMatchResultTo
+[       OK ] PairTest.CanExplainMatchResultTo (0 ms)
+[ RUN      ] PairTest.MatchesCorrectly
+[       OK ] PairTest.MatchesCorrectly (0 ms)
+[ RUN      ] PairTest.SafelyCastsInnerMatchers
+[       OK ] PairTest.SafelyCastsInnerMatchers (0 ms)
+[ RUN      ] PairTest.InsideContainsUsingMap
+[       OK ] PairTest.InsideContainsUsingMap (0 ms)
+[----------] 6 tests from PairTest (0 ms total)
+
+[----------] 2 tests from StartsWithTest
+[ RUN      ] StartsWithTest.MatchesStringWithGivenPrefix
+[       OK ] StartsWithTest.MatchesStringWithGivenPrefix (0 ms)
+[ RUN      ] StartsWithTest.CanDescribeSelf
+[       OK ] StartsWithTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StartsWithTest (0 ms total)
+
+[----------] 2 tests from EndsWithTest
+[ RUN      ] EndsWithTest.MatchesStringWithGivenSuffix
+[       OK ] EndsWithTest.MatchesStringWithGivenSuffix (0 ms)
+[ RUN      ] EndsWithTest.CanDescribeSelf
+[       OK ] EndsWithTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from EndsWithTest (0 ms total)
+
+[----------] 2 tests from MatchesRegexTest
+[ RUN      ] MatchesRegexTest.MatchesStringMatchingGivenRegex
+[       OK ] MatchesRegexTest.MatchesStringMatchingGivenRegex (0 ms)
+[ RUN      ] MatchesRegexTest.CanDescribeSelf
+[       OK ] MatchesRegexTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from MatchesRegexTest (0 ms total)
+
+[----------] 2 tests from ContainsRegexTest
+[ RUN      ] ContainsRegexTest.MatchesStringContainingGivenRegex
+[       OK ] ContainsRegexTest.MatchesStringContainingGivenRegex (0 ms)
+[ RUN      ] ContainsRegexTest.CanDescribeSelf
+[       OK ] ContainsRegexTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from ContainsRegexTest (0 ms total)
+
+[----------] 2 tests from StdWideStrEqTest
+[ RUN      ] StdWideStrEqTest.MatchesEqual
+[       OK ] StdWideStrEqTest.MatchesEqual (0 ms)
+[ RUN      ] StdWideStrEqTest.CanDescribeSelf
+[       OK ] StdWideStrEqTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StdWideStrEqTest (0 ms total)
+
+[----------] 2 tests from StdWideStrNeTest
+[ RUN      ] StdWideStrNeTest.MatchesUnequalString
+[       OK ] StdWideStrNeTest.MatchesUnequalString (0 ms)
+[ RUN      ] StdWideStrNeTest.CanDescribeSelf
+[       OK ] StdWideStrNeTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StdWideStrNeTest (0 ms total)
+
+[----------] 3 tests from StdWideStrCaseEqTest
+[ RUN      ] StdWideStrCaseEqTest.MatchesEqualStringIgnoringCase
+[       OK ] StdWideStrCaseEqTest.MatchesEqualStringIgnoringCase (0 ms)
+[ RUN      ] StdWideStrCaseEqTest.MatchesEqualStringWith0IgnoringCase
+[       OK ] StdWideStrCaseEqTest.MatchesEqualStringWith0IgnoringCase (0 ms)
+[ RUN      ] StdWideStrCaseEqTest.CanDescribeSelf
+[       OK ] StdWideStrCaseEqTest.CanDescribeSelf (0 ms)
+[----------] 3 tests from StdWideStrCaseEqTest (0 ms total)
+
+[----------] 2 tests from StdWideStrCaseNeTest
+[ RUN      ] StdWideStrCaseNeTest.MatchesUnequalStringIgnoringCase
+[       OK ] StdWideStrCaseNeTest.MatchesUnequalStringIgnoringCase (0 ms)
+[ RUN      ] StdWideStrCaseNeTest.CanDescribeSelf
+[       OK ] StdWideStrCaseNeTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StdWideStrCaseNeTest (0 ms total)
+
+[----------] 3 tests from StdWideHasSubstrTest
+[ RUN      ] StdWideHasSubstrTest.WorksForStringClasses
+[       OK ] StdWideHasSubstrTest.WorksForStringClasses (0 ms)
+[ RUN      ] StdWideHasSubstrTest.WorksForCStrings
+[       OK ] StdWideHasSubstrTest.WorksForCStrings (0 ms)
+[ RUN      ] StdWideHasSubstrTest.CanDescribeSelf
+[       OK ] StdWideHasSubstrTest.CanDescribeSelf (0 ms)
+[----------] 3 tests from StdWideHasSubstrTest (0 ms total)
+
+[----------] 2 tests from StdWideStartsWithTest
+[ RUN      ] StdWideStartsWithTest.MatchesStringWithGivenPrefix
+[       OK ] StdWideStartsWithTest.MatchesStringWithGivenPrefix (0 ms)
+[ RUN      ] StdWideStartsWithTest.CanDescribeSelf
+[       OK ] StdWideStartsWithTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StdWideStartsWithTest (0 ms total)
+
+[----------] 2 tests from StdWideEndsWithTest
+[ RUN      ] StdWideEndsWithTest.MatchesStringWithGivenSuffix
+[       OK ] StdWideEndsWithTest.MatchesStringWithGivenSuffix (0 ms)
+[ RUN      ] StdWideEndsWithTest.CanDescribeSelf
+[       OK ] StdWideEndsWithTest.CanDescribeSelf (0 ms)
+[----------] 2 tests from StdWideEndsWithTest (0 ms total)
+
+[----------] 2 tests from Eq2Test
+[ RUN      ] Eq2Test.MatchesEqualArguments
+[       OK ] Eq2Test.MatchesEqualArguments (0 ms)
+[ RUN      ] Eq2Test.CanDescribeSelf
+[       OK ] Eq2Test.CanDescribeSelf (0 ms)
+[----------] 2 tests from Eq2Test (0 ms total)
+
+[----------] 2 tests from Ge2Test
+[ RUN      ] Ge2Test.MatchesGreaterThanOrEqualArguments
+[       OK ] Ge2Test.MatchesGreaterThanOrEqualArguments (0 ms)
+[ RUN      ] Ge2Test.CanDescribeSelf
+[       OK ] Ge2Test.CanDescribeSelf (0 ms)
+[----------] 2 tests from Ge2Test (0 ms total)
+
+[----------] 2 tests from Gt2Test
+[ RUN      ] Gt2Test.MatchesGreaterThanArguments
+[       OK ] Gt2Test.MatchesGreaterThanArguments (0 ms)
+[ RUN      ] Gt2Test.CanDescribeSelf
+[       OK ] Gt2Test.CanDescribeSelf (0 ms)
+[----------] 2 tests from Gt2Test (0 ms total)
+
+[----------] 2 tests from Le2Test
+[ RUN      ] Le2Test.MatchesLessThanOrEqualArguments
+[       OK ] Le2Test.MatchesLessThanOrEqualArguments (0 ms)
+[ RUN      ] Le2Test.CanDescribeSelf
+[       OK ] Le2Test.CanDescribeSelf (0 ms)
+[----------] 2 tests from Le2Test (0 ms total)
+
+[----------] 2 tests from Lt2Test
+[ RUN      ] Lt2Test.MatchesLessThanArguments
+[       OK ] Lt2Test.MatchesLessThanArguments (0 ms)
+[ RUN      ] Lt2Test.CanDescribeSelf
+[       OK ] Lt2Test.CanDescribeSelf (0 ms)
+[----------] 2 tests from Lt2Test (0 ms total)
+
+[----------] 2 tests from Ne2Test
+[ RUN      ] Ne2Test.MatchesUnequalArguments
+[       OK ] Ne2Test.MatchesUnequalArguments (0 ms)
+[ RUN      ] Ne2Test.CanDescribeSelf
+[       OK ] Ne2Test.CanDescribeSelf (0 ms)
+[----------] 2 tests from Ne2Test (0 ms total)
+
+[----------] 3 tests from NotTest
+[ RUN      ] NotTest.NegatesMatcher
+[       OK ] NotTest.NegatesMatcher (0 ms)
+[ RUN      ] NotTest.CanDescribeSelf
+[       OK ] NotTest.CanDescribeSelf (0 ms)
+[ RUN      ] NotTest.NotMatcherSafelyCastsMonomorphicMatchers
+[       OK ] NotTest.NotMatcherSafelyCastsMonomorphicMatchers (0 ms)
+[----------] 3 tests from NotTest (0 ms total)
+
+[----------] 3 tests from AllOfTest
+[ RUN      ] AllOfTest.MatchesWhenAllMatch
+[       OK ] AllOfTest.MatchesWhenAllMatch (0 ms)
+[ RUN      ] AllOfTest.CanDescribeSelf
+[       OK ] AllOfTest.CanDescribeSelf (0 ms)
+[ RUN      ] AllOfTest.AllOfMatcherSafelyCastsMonomorphicMatchers
+[       OK ] AllOfTest.AllOfMatcherSafelyCastsMonomorphicMatchers (0 ms)
+[----------] 3 tests from AllOfTest (0 ms total)
+
+[----------] 3 tests from AnyOfTest
+[ RUN      ] AnyOfTest.MatchesWhenAnyMatches
+[       OK ] AnyOfTest.MatchesWhenAnyMatches (0 ms)
+[ RUN      ] AnyOfTest.CanDescribeSelf
+[       OK ] AnyOfTest.CanDescribeSelf (0 ms)
+[ RUN      ] AnyOfTest.AnyOfMatcherSafelyCastsMonomorphicMatchers
+[       OK ] AnyOfTest.AnyOfMatcherSafelyCastsMonomorphicMatchers (0 ms)
+[----------] 3 tests from AnyOfTest (16 ms total)
+
+[----------] 4 tests from TrulyTest
+[ RUN      ] TrulyTest.MatchesWhatSatisfiesThePredicate
+[       OK ] TrulyTest.MatchesWhatSatisfiesThePredicate (0 ms)
+[ RUN      ] TrulyTest.CanBeUsedWithFunctor
+[       OK ] TrulyTest.CanBeUsedWithFunctor (0 ms)
+[ RUN      ] TrulyTest.CanDescribeSelf
+[       OK ] TrulyTest.CanDescribeSelf (0 ms)
+[ RUN      ] TrulyTest.WorksForByRefArguments
+[       OK ] TrulyTest.WorksForByRefArguments (0 ms)
+[----------] 4 tests from TrulyTest (0 ms total)
+
+[----------] 3 tests from MatchesTest
+[ RUN      ] MatchesTest.IsSatisfiedByWhatMatchesTheMatcher
+[       OK ] MatchesTest.IsSatisfiedByWhatMatchesTheMatcher (0 ms)
+[ RUN      ] MatchesTest.WorksOnByRefArguments
+[       OK ] MatchesTest.WorksOnByRefArguments (0 ms)
+[ RUN      ] MatchesTest.WorksWithMatcherOnNonRefType
+[       OK ] MatchesTest.WorksWithMatcherOnNonRefType (0 ms)
+[----------] 3 tests from MatchesTest (15 ms total)
+
+[----------] 2 tests from ValueTest
+[ RUN      ] ValueTest.WorksWithPolymorphicMatcher
+[       OK ] ValueTest.WorksWithPolymorphicMatcher (0 ms)
+[ RUN      ] ValueTest.WorksWithMonomorphicMatcher
+[       OK ] ValueTest.WorksWithMonomorphicMatcher (0 ms)
+[----------] 2 tests from ValueTest (0 ms total)
+
+[----------] 3 tests from AllArgsTest
+[ RUN      ] AllArgsTest.WorksForTuple
+[       OK ] AllArgsTest.WorksForTuple (0 ms)
+[ RUN      ] AllArgsTest.WorksForNonTuple
+[       OK ] AllArgsTest.WorksForNonTuple (0 ms)
+[ RUN      ] AllArgsTest.WorksInWithClause
+[       OK ] AllArgsTest.WorksInWithClause (0 ms)
+[----------] 3 tests from AllArgsTest (0 ms total)
+
+[----------] 4 tests from MatcherAssertionTest
+[ RUN      ] MatcherAssertionTest.WorksWhenMatcherIsSatisfied
+[       OK ] MatcherAssertionTest.WorksWhenMatcherIsSatisfied (0 ms)
+[ RUN      ] MatcherAssertionTest.WorksWhenMatcherIsNotSatisfied
+[       OK ] MatcherAssertionTest.WorksWhenMatcherIsNotSatisfied (0 ms)
+[ RUN      ] MatcherAssertionTest.WorksForByRefArguments
+[       OK ] MatcherAssertionTest.WorksForByRefArguments (0 ms)
+[ RUN      ] MatcherAssertionTest.WorksForMonomorphicMatcher
+[       OK ] MatcherAssertionTest.WorksForMonomorphicMatcher (0 ms)
+[----------] 4 tests from MatcherAssertionTest (0 ms total)
+
+[----------] 8 tests from PointeeTest
+[ RUN      ] PointeeTest.RawPointer
+[       OK ] PointeeTest.RawPointer (0 ms)
+[ RUN      ] PointeeTest.RawPointerToConst
+[       OK ] PointeeTest.RawPointerToConst (0 ms)
+[ RUN      ] PointeeTest.ReferenceToConstRawPointer
+[       OK ] PointeeTest.ReferenceToConstRawPointer (0 ms)
+[ RUN      ] PointeeTest.ReferenceToNonConstRawPointer
+[       OK ] PointeeTest.ReferenceToNonConstRawPointer (0 ms)
+[ RUN      ] PointeeTest.NeverMatchesNull
+[       OK ] PointeeTest.NeverMatchesNull (0 ms)
+[ RUN      ] PointeeTest.MatchesAgainstAValue
+[       OK ] PointeeTest.MatchesAgainstAValue (0 ms)
+[ RUN      ] PointeeTest.CanDescribeSelf
+[       OK ] PointeeTest.CanDescribeSelf (0 ms)
+[ RUN      ] PointeeTest.CanExplainMatchResult
+[       OK ] PointeeTest.CanExplainMatchResult (0 ms)
+[----------] 8 tests from PointeeTest (0 ms total)
+
+[----------] 9 tests from FieldTest
+[ RUN      ] FieldTest.WorksForNonConstField
+[       OK ] FieldTest.WorksForNonConstField (0 ms)
+[ RUN      ] FieldTest.WorksForConstField
+[       OK ] FieldTest.WorksForConstField (0 ms)
+[ RUN      ] FieldTest.WorksForUncopyableField
+[       OK ] FieldTest.WorksForUncopyableField (0 ms)
+[ RUN      ] FieldTest.WorksForPointerField
+[       OK ] FieldTest.WorksForPointerField (0 ms)
+[ RUN      ] FieldTest.WorksForByRefArgument
+[       OK ] FieldTest.WorksForByRefArgument (0 ms)
+[ RUN      ] FieldTest.WorksForArgumentOfSubType
+[       OK ] FieldTest.WorksForArgumentOfSubType (0 ms)
+[ RUN      ] FieldTest.WorksForCompatibleMatcherType
+[       OK ] FieldTest.WorksForCompatibleMatcherType (0 ms)
+[ RUN      ] FieldTest.CanDescribeSelf
+[       OK ] FieldTest.CanDescribeSelf (0 ms)
+[ RUN      ] FieldTest.CanExplainMatchResult
+[       OK ] FieldTest.CanExplainMatchResult (0 ms)
+[----------] 9 tests from FieldTest (0 ms total)
+
+[----------] 7 tests from FieldForPointerTest
+[ RUN      ] FieldForPointerTest.WorksForPointerToConst
+[       OK ] FieldForPointerTest.WorksForPointerToConst (0 ms)
+[ RUN      ] FieldForPointerTest.WorksForPointerToNonConst
+[       OK ] FieldForPointerTest.WorksForPointerToNonConst (0 ms)
+[ RUN      ] FieldForPointerTest.WorksForReferenceToConstPointer
+[       OK ] FieldForPointerTest.WorksForReferenceToConstPointer (0 ms)
+[ RUN      ] FieldForPointerTest.DoesNotMatchNull
+[       OK ] FieldForPointerTest.DoesNotMatchNull (0 ms)
+[ RUN      ] FieldForPointerTest.WorksForArgumentOfSubType
+[       OK ] FieldForPointerTest.WorksForArgumentOfSubType (0 ms)
+[ RUN      ] FieldForPointerTest.CanDescribeSelf
+[       OK ] FieldForPointerTest.CanDescribeSelf (0 ms)
+[ RUN      ] FieldForPointerTest.CanExplainMatchResult
+[       OK ] FieldForPointerTest.CanExplainMatchResult (0 ms)
+[----------] 7 tests from FieldForPointerTest (0 ms total)
+
+[----------] 8 tests from PropertyTest
+[ RUN      ] PropertyTest.WorksForNonReferenceProperty
+[       OK ] PropertyTest.WorksForNonReferenceProperty (0 ms)
+[ RUN      ] PropertyTest.WorksForReferenceToConstProperty
+[       OK ] PropertyTest.WorksForReferenceToConstProperty (0 ms)
+[ RUN      ] PropertyTest.WorksForReferenceToNonConstProperty
+[       OK ] PropertyTest.WorksForReferenceToNonConstProperty (0 ms)
+[ RUN      ] PropertyTest.WorksForByValueArgument
+[       OK ] PropertyTest.WorksForByValueArgument (0 ms)
+[ RUN      ] PropertyTest.WorksForArgumentOfSubType
+[       OK ] PropertyTest.WorksForArgumentOfSubType (0 ms)
+[ RUN      ] PropertyTest.WorksForCompatibleMatcherType
+[       OK ] PropertyTest.WorksForCompatibleMatcherType (0 ms)
+[ RUN      ] PropertyTest.CanDescribeSelf
+[       OK ] PropertyTest.CanDescribeSelf (0 ms)
+[ RUN      ] PropertyTest.CanExplainMatchResult
+[       OK ] PropertyTest.CanExplainMatchResult (0 ms)
+[----------] 8 tests from PropertyTest (0 ms total)
+
+[----------] 7 tests from PropertyForPointerTest
+[ RUN      ] PropertyForPointerTest.WorksForPointerToConst
+[       OK ] PropertyForPointerTest.WorksForPointerToConst (0 ms)
+[ RUN      ] PropertyForPointerTest.WorksForPointerToNonConst
+[       OK ] PropertyForPointerTest.WorksForPointerToNonConst (0 ms)
+[ RUN      ] PropertyForPointerTest.WorksForReferenceToConstPointer
+[       OK ] PropertyForPointerTest.WorksForReferenceToConstPointer (0 ms)
+[ RUN      ] PropertyForPointerTest.WorksForReferenceToNonConstProperty
+[       OK ] PropertyForPointerTest.WorksForReferenceToNonConstProperty (0 ms)
+[ RUN      ] PropertyForPointerTest.WorksForArgumentOfSubType
+[       OK ] PropertyForPointerTest.WorksForArgumentOfSubType (0 ms)
+[ RUN      ] PropertyForPointerTest.CanDescribeSelf
+[       OK ] PropertyForPointerTest.CanDescribeSelf (0 ms)
+[ RUN      ] PropertyForPointerTest.CanExplainMatchResult
+[       OK ] PropertyForPointerTest.CanExplainMatchResult (0 ms)
+[----------] 7 tests from PropertyForPointerTest (0 ms total)
+
+[----------] 11 tests from ResultOfTest
+[ RUN      ] ResultOfTest.WorksForFunctionPointers
+[       OK ] ResultOfTest.WorksForFunctionPointers (0 ms)
+[ RUN      ] ResultOfTest.CanDescribeItself
+[       OK ] ResultOfTest.CanDescribeItself (0 ms)
+[ RUN      ] ResultOfTest.CanExplainMatchResult
+[       OK ] ResultOfTest.CanExplainMatchResult (0 ms)
+[ RUN      ] ResultOfTest.WorksForNonReferenceResults
+[       OK ] ResultOfTest.WorksForNonReferenceResults (0 ms)
+[ RUN      ] ResultOfTest.WorksForReferenceToNonConstResults
+[       OK ] ResultOfTest.WorksForReferenceToNonConstResults (0 ms)
+[ RUN      ] ResultOfTest.WorksForReferenceToConstResults
+[       OK ] ResultOfTest.WorksForReferenceToConstResults (0 ms)
+[ RUN      ] ResultOfTest.WorksForCompatibleMatcherTypes
+[       OK ] ResultOfTest.WorksForCompatibleMatcherTypes (0 ms)
+[ RUN      ] ResultOfTest.WorksForFunctionReferences
+[       OK ] ResultOfTest.WorksForFunctionReferences (0 ms)
+[ RUN      ] ResultOfTest.WorksForFunctors
+[       OK ] ResultOfTest.WorksForFunctors (0 ms)
+[ RUN      ] ResultOfTest.WorksForPolymorphicFunctors
+[       OK ] ResultOfTest.WorksForPolymorphicFunctors (0 ms)
+[ RUN      ] ResultOfTest.WorksForReferencingCallables
+[       OK ] ResultOfTest.WorksForReferencingCallables (0 ms)
+[----------] 11 tests from ResultOfTest (0 ms total)
+
+[----------] 5 tests from ExplainMatchResultTest
+[ RUN      ] ExplainMatchResultTest.AllOf_False_False
+[       OK ] ExplainMatchResultTest.AllOf_False_False (0 ms)
+[ RUN      ] ExplainMatchResultTest.AllOf_False_True
+[       OK ] ExplainMatchResultTest.AllOf_False_True (0 ms)
+[ RUN      ] ExplainMatchResultTest.AllOf_True_False
+[       OK ] ExplainMatchResultTest.AllOf_True_False (0 ms)
+[ RUN      ] ExplainMatchResultTest.AllOf_True_True
+[       OK ] ExplainMatchResultTest.AllOf_True_True (0 ms)
+[ RUN      ] ExplainMatchResultTest.AllOf_True_True_2
+[       OK ] ExplainMatchResultTest.AllOf_True_True_2 (0 ms)
+[----------] 5 tests from ExplainMatchResultTest (0 ms total)
+
+[----------] 1 test from ExplainmatcherResultTest
+[ RUN      ] ExplainmatcherResultTest.MonomorphicMatcher
+[       OK ] ExplainmatcherResultTest.MonomorphicMatcher (0 ms)
+[----------] 1 test from ExplainmatcherResultTest (0 ms total)
+
+[----------] 7 tests from ByRefTest
+[ RUN      ] ByRefTest.AllowsNotCopyableConstValueInMatchers
+[       OK ] ByRefTest.AllowsNotCopyableConstValueInMatchers (0 ms)
+[ RUN      ] ByRefTest.AllowsNotCopyableValueInMatchers
+[       OK ] ByRefTest.AllowsNotCopyableValueInMatchers (0 ms)
+[ RUN      ] ByRefTest.IsCopyable
+[       OK ] ByRefTest.IsCopyable (0 ms)
+[ RUN      ] ByRefTest.ConstValue
+[       OK ] ByRefTest.ConstValue (0 ms)
+[ RUN      ] ByRefTest.NonConstValue
+[       OK ] ByRefTest.NonConstValue (0 ms)
+[ RUN      ] ByRefTest.ExplicitType
+[       OK ] ByRefTest.ExplicitType (0 ms)
+[ RUN      ] ByRefTest.PrintsCorrectly
+[       OK ] ByRefTest.PrintsCorrectly (0 ms)
+[----------] 7 tests from ByRefTest (0 ms total)
+
+[----------] 5 tests from ContainerEqTest/0, where TypeParam =
+std::set<int, std::less<int>, std::allocator<int> >
+[ RUN      ] ContainerEqTest/0.EqualsSelf
+[       OK ] ContainerEqTest/0.EqualsSelf (0 ms)
+[ RUN      ] ContainerEqTest/0.ValueMissing
+[       OK ] ContainerEqTest/0.ValueMissing (0 ms)
+[ RUN      ] ContainerEqTest/0.ValueAdded
+[       OK ] ContainerEqTest/0.ValueAdded (0 ms)
+[ RUN      ] ContainerEqTest/0.ValueAddedAndRemoved
+[       OK ] ContainerEqTest/0.ValueAddedAndRemoved (0 ms)
+[ RUN      ] ContainerEqTest/0.DuplicateDifference
+[       OK ] ContainerEqTest/0.DuplicateDifference (0 ms)
+[----------] 5 tests from ContainerEqTest/0 (0 ms total)
+
+[----------] 5 tests from ContainerEqTest/1, where TypeParam =
+std::vector<unsigned int, std::allocator<unsigned int> >
+[ RUN      ] ContainerEqTest/1.EqualsSelf
+[       OK ] ContainerEqTest/1.EqualsSelf (0 ms)
+[ RUN      ] ContainerEqTest/1.ValueMissing
+[       OK ] ContainerEqTest/1.ValueMissing (0 ms)
+[ RUN      ] ContainerEqTest/1.ValueAdded
+[       OK ] ContainerEqTest/1.ValueAdded (0 ms)
+[ RUN      ] ContainerEqTest/1.ValueAddedAndRemoved
+[       OK ] ContainerEqTest/1.ValueAddedAndRemoved (0 ms)
+[ RUN      ] ContainerEqTest/1.DuplicateDifference
+[       OK ] ContainerEqTest/1.DuplicateDifference (0 ms)
+[----------] 5 tests from ContainerEqTest/1 (16 ms total)
+
+[----------] 5 tests from ContainerEqTest/2, where TypeParam =
+std::multiset<unsigned int, std::less<unsigned int>,
+std::allocator<unsigned int> >
+[ RUN      ] ContainerEqTest/2.EqualsSelf
+[       OK ] ContainerEqTest/2.EqualsSelf (0 ms)
+[ RUN      ] ContainerEqTest/2.ValueMissing
+[       OK ] ContainerEqTest/2.ValueMissing (0 ms)
+[ RUN      ] ContainerEqTest/2.ValueAdded
+[       OK ] ContainerEqTest/2.ValueAdded (0 ms)
+[ RUN      ] ContainerEqTest/2.ValueAddedAndRemoved
+[       OK ] ContainerEqTest/2.ValueAddedAndRemoved (0 ms)
+[ RUN      ] ContainerEqTest/2.DuplicateDifference
+[       OK ] ContainerEqTest/2.DuplicateDifference (0 ms)
+[----------] 5 tests from ContainerEqTest/2 (15 ms total)
+
+[----------] 5 tests from ContainerEqTest/3, where TypeParam =
+std::list<int, std::allocator<int> >
+[ RUN      ] ContainerEqTest/3.EqualsSelf
+[       OK ] ContainerEqTest/3.EqualsSelf (0 ms)
+[ RUN      ] ContainerEqTest/3.ValueMissing
+[       OK ] ContainerEqTest/3.ValueMissing (0 ms)
+[ RUN      ] ContainerEqTest/3.ValueAdded
+[       OK ] ContainerEqTest/3.ValueAdded (0 ms)
+[ RUN      ] ContainerEqTest/3.ValueAddedAndRemoved
+[       OK ] ContainerEqTest/3.ValueAddedAndRemoved (0 ms)
+[ RUN      ] ContainerEqTest/3.DuplicateDifference
+[       OK ] ContainerEqTest/3.DuplicateDifference (0 ms)
+[----------] 5 tests from ContainerEqTest/3 (0 ms total)
+
+[----------] 9 tests from ContainerEqExtraTest
+[ RUN      ] ContainerEqExtraTest.MultipleValuesMissing
+[       OK ] ContainerEqExtraTest.MultipleValuesMissing (0 ms)
+[ RUN      ] ContainerEqExtraTest.MultipleValuesAdded
+[       OK ] ContainerEqExtraTest.MultipleValuesAdded (0 ms)
+[ RUN      ] ContainerEqExtraTest.MultipleValuesAddedAndRemoved
+[       OK ] ContainerEqExtraTest.MultipleValuesAddedAndRemoved (0 ms)
+[ RUN      ] ContainerEqExtraTest.MultiSetOfIntDuplicateDifference
+[       OK ] ContainerEqExtraTest.MultiSetOfIntDuplicateDifference (0 ms)
+[ RUN      ] ContainerEqExtraTest.WorksForMaps
+[       OK ] ContainerEqExtraTest.WorksForMaps (0 ms)
+[ RUN      ] ContainerEqExtraTest.WorksForNativeArray
+[       OK ] ContainerEqExtraTest.WorksForNativeArray (0 ms)
+[ RUN      ] ContainerEqExtraTest.WorksForTwoDimensionalNativeArray
+[       OK ] ContainerEqExtraTest.WorksForTwoDimensionalNativeArray (0 ms)
+[ RUN      ] ContainerEqExtraTest.WorksForNativeArrayAsTuple
+[       OK ] ContainerEqExtraTest.WorksForNativeArrayAsTuple (0 ms)
+[ RUN      ] ContainerEqExtraTest.CopiesNativeArrayParameter
+[       OK ] ContainerEqExtraTest.CopiesNativeArrayParameter (0 ms)
+[----------] 9 tests from ContainerEqExtraTest (16 ms total)
+
+[----------] 4 tests from GetParamIndexTest
+[ RUN      ] GetParamIndexTest.WorksForEmptyParamList
+[       OK ] GetParamIndexTest.WorksForEmptyParamList (0 ms)
+[ RUN      ] GetParamIndexTest.RecognizesStar
+[       OK ] GetParamIndexTest.RecognizesStar (0 ms)
+[ RUN      ] GetParamIndexTest.RecognizesKnownParam
+[       OK ] GetParamIndexTest.RecognizesKnownParam (0 ms)
+[ RUN      ] GetParamIndexTest.RejectsUnknownParam
+[       OK ] GetParamIndexTest.RejectsUnknownParam (0 ms)
+[----------] 4 tests from GetParamIndexTest (0 ms total)
+
+[----------] 2 tests from SkipPrefixTest
+[ RUN      ] SkipPrefixTest.SkipsWhenPrefixMatches
+[       OK ] SkipPrefixTest.SkipsWhenPrefixMatches (0 ms)
+[ RUN      ] SkipPrefixTest.DoesNotSkipWhenPrefixDoesNotMatch
+[       OK ] SkipPrefixTest.DoesNotSkipWhenPrefixDoesNotMatch (0 ms)
+[----------] 2 tests from SkipPrefixTest (0 ms total)
+
+[----------] 1 test from FormatMatcherDescriptionSyntaxErrorTest
+[ RUN      ] FormatMatcherDescriptionSyntaxErrorTest.FormatsCorrectly
+[       OK ] FormatMatcherDescriptionSyntaxErrorTest.FormatsCorrectly (0 ms)
+[----------] 1 test from FormatMatcherDescriptionSyntaxErrorTest (0 ms total)
+
+[----------] 10 tests from ValidateMatcherDescriptionTest
+[ RUN      ] ValidateMatcherDescriptionTest.AcceptsEmptyDescription
+[       OK ] ValidateMatcherDescriptionTest.AcceptsEmptyDescription (0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.AcceptsNonEmptyDescriptionWithNoInterpolation
+[       OK ] ValidateMatcherDescriptionTest.AcceptsNonEmptyDescriptionWithNoInterpolation
+(0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.AcceptsPercentInterpolation
+[       OK ] ValidateMatcherDescriptionTest.AcceptsPercentInterpolation (0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.AcceptsTupleInterpolation
+[       OK ] ValidateMatcherDescriptionTest.AcceptsTupleInterpolation (0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.AcceptsParamInterpolation
+[       OK ] ValidateMatcherDescriptionTest.AcceptsParamInterpolation (0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.AcceptsMultiplenterpolations
+[       OK ] ValidateMatcherDescriptionTest.AcceptsMultiplenterpolations (0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.AcceptsRepeatedParams
+[       OK ] ValidateMatcherDescriptionTest.AcceptsRepeatedParams (0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.RejectsUnknownParam
+[       OK ] ValidateMatcherDescriptionTest.RejectsUnknownParam (0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.RejectsUnfinishedParam
+[       OK ] ValidateMatcherDescriptionTest.RejectsUnfinishedParam (0 ms)
+[ RUN      ] ValidateMatcherDescriptionTest.RejectsSinglePercent
+[       OK ] ValidateMatcherDescriptionTest.RejectsSinglePercent (0 ms)
+[----------] 10 tests from ValidateMatcherDescriptionTest (0 ms total)
+
+[----------] 4 tests from JoinAsTupleTest
+[ RUN      ] JoinAsTupleTest.JoinsEmptyTuple
+[       OK ] JoinAsTupleTest.JoinsEmptyTuple (0 ms)
+[ RUN      ] JoinAsTupleTest.JoinsOneTuple
+[       OK ] JoinAsTupleTest.JoinsOneTuple (0 ms)
+[ RUN      ] JoinAsTupleTest.JoinsTwoTuple
+[       OK ] JoinAsTupleTest.JoinsTwoTuple (0 ms)
+[ RUN      ] JoinAsTupleTest.JoinsTenTuple
+[       OK ] JoinAsTupleTest.JoinsTenTuple (0 ms)
+[----------] 4 tests from JoinAsTupleTest (0 ms total)
+
+[----------] 9 tests from FormatMatcherDescriptionTest
+[ RUN      ] FormatMatcherDescriptionTest.WorksForEmptyDescription
+[       OK ] FormatMatcherDescriptionTest.WorksForEmptyDescription (0 ms)
+[ RUN      ] FormatMatcherDescriptionTest.WorksForDescriptionWithNoInterpolation
+[       OK ] FormatMatcherDescriptionTest.WorksForDescriptionWithNoInterpolation
+(0 ms)
+[ RUN      ] FormatMatcherDescriptionTest.WorksWhenDescriptionStartsWithInterpolation
+[       OK ] FormatMatcherDescriptionTest.WorksWhenDescriptionStartsWithInterpolation
+(0 ms)
+[ RUN      ] FormatMatcherDescriptionTest.WorksWhenDescriptionEndsWithInterpolation
+[       OK ] FormatMatcherDescriptionTest.WorksWhenDescriptionEndsWithInterpolation
+(0 ms)
+[ RUN      ] FormatMatcherDescriptionTest.WorksWhenDescriptionStartsAndEndsWithInterpolation
+[       OK ] FormatMatcherDescriptionTest.WorksWhenDescriptionStartsAndEndsWithInterpolation
+(0 ms)
+[ RUN      ] FormatMatcherDescriptionTest.WorksWhenDescriptionDoesNotStartOrEndWithInterpolation
+[       OK ] FormatMatcherDescriptionTest.WorksWhenDescriptionDoesNotStartOrEndWithInterpolation
+(0 ms)
+[ RUN      ] FormatMatcherDescriptionTest.WorksWhenDescriptionContainsMultipleInterpolations
+[       OK ] FormatMatcherDescriptionTest.WorksWhenDescriptionContainsMultipleInterpolations
+(0 ms)
+[ RUN      ] FormatMatcherDescriptionTest.WorksWhenDescriptionContainsRepeatedParams
+[       OK ] FormatMatcherDescriptionTest.WorksWhenDescriptionContainsRepeatedParams
+(0 ms)
+[ RUN      ] FormatMatcherDescriptionTest.WorksForDescriptionWithInvalidInterpolation
+[       OK ] FormatMatcherDescriptionTest.WorksForDescriptionWithInvalidInterpolation
+(0 ms)
+[----------] 9 tests from FormatMatcherDescriptionTest (0 ms total)
+
+[----------] 2 tests from PolymorphicMatcherTest
+[ RUN      ] PolymorphicMatcherTest.CanAccessMutableImpl
+[       OK ] PolymorphicMatcherTest.CanAccessMutableImpl (0 ms)
+[ RUN      ] PolymorphicMatcherTest.CanAccessImpl
+[       OK ] PolymorphicMatcherTest.CanAccessImpl (0 ms)
+[----------] 2 tests from PolymorphicMatcherTest (0 ms total)
+
+[----------] 5 tests from ConvertIdentifierNameToWordsTest
+[ RUN      ] ConvertIdentifierNameToWordsTest.WorksWhenNameContainsNoWord
+[       OK ] ConvertIdentifierNameToWordsTest.WorksWhenNameContainsNoWord (0 ms)
+[ RUN      ] ConvertIdentifierNameToWordsTest.WorksWhenNameContainsDigits
+[       OK ] ConvertIdentifierNameToWordsTest.WorksWhenNameContainsDigits (0 ms)
+[ RUN      ] ConvertIdentifierNameToWordsTest.WorksWhenNameContainsCamelCaseWords
+[       OK ] ConvertIdentifierNameToWordsTest.WorksWhenNameContainsCamelCaseWords
+(0 ms)
+[ RUN      ] ConvertIdentifierNameToWordsTest.WorksWhenNameContains_SeparatedWords
+[       OK ] ConvertIdentifierNameToWordsTest.WorksWhenNameContains_SeparatedWords
+(0 ms)
+[ RUN      ] ConvertIdentifierNameToWordsTest.WorksWhenNameIsMixture
+[       OK ] ConvertIdentifierNameToWordsTest.WorksWhenNameIsMixture (0 ms)
+[----------] 5 tests from ConvertIdentifierNameToWordsTest (0 ms total)
+
+[----------] 1 test from CompileAssertTypesEqual
+[ RUN      ] CompileAssertTypesEqual.CompilesWhenTypesAreEqual
+[       OK ] CompileAssertTypesEqual.CompilesWhenTypesAreEqual (0 ms)
+[----------] 1 test from CompileAssertTypesEqual (0 ms total)
+
+[----------] 3 tests from RemoveReferenceTest
+[ RUN      ] RemoveReferenceTest.DoesNotAffectNonReferenceType
+[       OK ] RemoveReferenceTest.DoesNotAffectNonReferenceType (0 ms)
+[ RUN      ] RemoveReferenceTest.RemovesReference
+[       OK ] RemoveReferenceTest.RemovesReference (0 ms)
+[ RUN      ] RemoveReferenceTest.MacroVersion
+[       OK ] RemoveReferenceTest.MacroVersion (0 ms)
+[----------] 3 tests from RemoveReferenceTest (0 ms total)
+
+[----------] 3 tests from RemoveConstTest
+[ RUN      ] RemoveConstTest.DoesNotAffectNonConstType
+[       OK ] RemoveConstTest.DoesNotAffectNonConstType (0 ms)
+[ RUN      ] RemoveConstTest.RemovesConst
+[       OK ] RemoveConstTest.RemovesConst (0 ms)
+[ RUN      ] RemoveConstTest.MacroVersion
+[       OK ] RemoveConstTest.MacroVersion (0 ms)
+[----------] 3 tests from RemoveConstTest (0 ms total)
+
+[----------] 3 tests from AddReferenceTest
+[ RUN      ] AddReferenceTest.DoesNotAffectReferenceType
+[       OK ] AddReferenceTest.DoesNotAffectReferenceType (0 ms)
+[ RUN      ] AddReferenceTest.AddsReference
+[       OK ] AddReferenceTest.AddsReference (0 ms)
+[ RUN      ] AddReferenceTest.MacroVersion
+[       OK ] AddReferenceTest.MacroVersion (0 ms)
+[----------] 3 tests from AddReferenceTest (0 ms total)
+
+[----------] 1 test from GMockReferenceToConstTest
+[ RUN      ] GMockReferenceToConstTest.Works
+[       OK ] GMockReferenceToConstTest.Works (0 ms)
+[----------] 1 test from GMockReferenceToConstTest (0 ms total)
+
+[----------] 2 tests from PointeeOfTest
+[ RUN      ] PointeeOfTest.WorksForSmartPointers
+[       OK ] PointeeOfTest.WorksForSmartPointers (0 ms)
+[ RUN      ] PointeeOfTest.WorksForRawPointers
+[       OK ] PointeeOfTest.WorksForRawPointers (0 ms)
+[----------] 2 tests from PointeeOfTest (16 ms total)
+
+[----------] 2 tests from GetRawPointerTest
+[ RUN      ] GetRawPointerTest.WorksForSmartPointers
+[       OK ] GetRawPointerTest.WorksForSmartPointers (0 ms)
+[ RUN      ] GetRawPointerTest.WorksForRawPointers
+[       OK ] GetRawPointerTest.WorksForRawPointers (0 ms)
+[----------] 2 tests from GetRawPointerTest (0 ms total)
+
+[----------] 3 tests from ImplicitlyConvertibleTest
+[ RUN      ] ImplicitlyConvertibleTest.ValueIsCompileTimeConstant
+[       OK ] ImplicitlyConvertibleTest.ValueIsCompileTimeConstant (0 ms)
+[ RUN      ] ImplicitlyConvertibleTest.ValueIsTrueWhenConvertible
+[       OK ] ImplicitlyConvertibleTest.ValueIsTrueWhenConvertible (0 ms)
+[ RUN      ] ImplicitlyConvertibleTest.ValueIsFalseWhenNotConvertible
+[       OK ] ImplicitlyConvertibleTest.ValueIsFalseWhenNotConvertible (0 ms)
+[----------] 3 tests from ImplicitlyConvertibleTest (0 ms total)
+
+[----------] 4 tests from KindOfTest
+[ RUN      ] KindOfTest.Bool
+[       OK ] KindOfTest.Bool (0 ms)
+[ RUN      ] KindOfTest.Integer
+[       OK ] KindOfTest.Integer (0 ms)
+[ RUN      ] KindOfTest.FloatingPoint
+[       OK ] KindOfTest.FloatingPoint (0 ms)
+[ RUN      ] KindOfTest.Other
+[       OK ] KindOfTest.Other (0 ms)
+[----------] 4 tests from KindOfTest (0 ms total)
+
+[----------] 9 tests from LosslessArithmeticConvertibleTest
+[ RUN      ] LosslessArithmeticConvertibleTest.BoolToBool
+[       OK ] LosslessArithmeticConvertibleTest.BoolToBool (0 ms)
+[ RUN      ] LosslessArithmeticConvertibleTest.BoolToInteger
+[       OK ] LosslessArithmeticConvertibleTest.BoolToInteger (0 ms)
+[ RUN      ] LosslessArithmeticConvertibleTest.BoolToFloatingPoint
+[       OK ] LosslessArithmeticConvertibleTest.BoolToFloatingPoint (0 ms)
+[ RUN      ] LosslessArithmeticConvertibleTest.IntegerToBool
+[       OK ] LosslessArithmeticConvertibleTest.IntegerToBool (0 ms)
+[ RUN      ] LosslessArithmeticConvertibleTest.IntegerToInteger
+[       OK ] LosslessArithmeticConvertibleTest.IntegerToInteger (0 ms)
+[ RUN      ] LosslessArithmeticConvertibleTest.IntegerToFloatingPoint
+[       OK ] LosslessArithmeticConvertibleTest.IntegerToFloatingPoint (0 ms)
+[ RUN      ] LosslessArithmeticConvertibleTest.FloatingPointToBool
+[       OK ] LosslessArithmeticConvertibleTest.FloatingPointToBool (0 ms)
+[ RUN      ] LosslessArithmeticConvertibleTest.FloatingPointToInteger
+[       OK ] LosslessArithmeticConvertibleTest.FloatingPointToInteger (0 ms)
+[ RUN      ] LosslessArithmeticConvertibleTest.FloatingPointToFloatingPoint
+[       OK ] LosslessArithmeticConvertibleTest.FloatingPointToFloatingPoint
+(0 ms)
+[----------] 9 tests from LosslessArithmeticConvertibleTest (0 ms total)
+
+[----------] 3 tests from IsAProtocolMessageTest
+[ RUN      ] IsAProtocolMessageTest.ValueIsCompileTimeConstant
+[       OK ] IsAProtocolMessageTest.ValueIsCompileTimeConstant (0 ms)
+[ RUN      ] IsAProtocolMessageTest.ValueIsTrueWhenTypeIsAProtocolMessage
+[       OK ] IsAProtocolMessageTest.ValueIsTrueWhenTypeIsAProtocolMessage (0 ms)
+[ RUN      ] IsAProtocolMessageTest.ValueIsFalseWhenTypeIsNotAProtocolMessage
+[       OK ] IsAProtocolMessageTest.ValueIsFalseWhenTypeIsNotAProtocolMessage
+(0 ms)
+[----------] 3 tests from IsAProtocolMessageTest (0 ms total)
+
+[----------] 2 tests from IsContainerTestTest
+[ RUN      ] IsContainerTestTest.WorksForNonContainer
+[       OK ] IsContainerTestTest.WorksForNonContainer (0 ms)
+[ RUN      ] IsContainerTestTest.WorksForContainer
+[       OK ] IsContainerTestTest.WorksForContainer (0 ms)
+[----------] 2 tests from IsContainerTestTest (0 ms total)
+
+[----------] 4 tests from TupleMatchesTest
+[ RUN      ] TupleMatchesTest.WorksForSize0
+[       OK ] TupleMatchesTest.WorksForSize0 (0 ms)
+[ RUN      ] TupleMatchesTest.WorksForSize1
+[       OK ] TupleMatchesTest.WorksForSize1 (0 ms)
+[ RUN      ] TupleMatchesTest.WorksForSize2
+[       OK ] TupleMatchesTest.WorksForSize2 (0 ms)
+[ RUN      ] TupleMatchesTest.WorksForSize5
+[       OK ] TupleMatchesTest.WorksForSize5 (0 ms)
+[----------] 4 tests from TupleMatchesTest (0 ms total)
+
+[----------] 2 tests from AssertTest
+[ RUN      ] AssertTest.SucceedsOnTrue
+[       OK ] AssertTest.SucceedsOnTrue (0 ms)
+[ RUN      ] AssertTest.FailsFatallyOnFalse
+[       OK ] AssertTest.FailsFatallyOnFalse (78 ms)
+[----------] 2 tests from AssertTest (78 ms total)
+
+[----------] 3 tests from LogIsVisibleTest
+[ RUN      ] LogIsVisibleTest.AlwaysReturnsTrueIfVerbosityIsInfo
+[       OK ] LogIsVisibleTest.AlwaysReturnsTrueIfVerbosityIsInfo (0 ms)
+[ RUN      ] LogIsVisibleTest.AlwaysReturnsFalseIfVerbosityIsError
+[       OK ] LogIsVisibleTest.AlwaysReturnsFalseIfVerbosityIsError (0 ms)
+[ RUN      ] LogIsVisibleTest.WorksWhenVerbosityIsWarning
+[       OK ] LogIsVisibleTest.WorksWhenVerbosityIsWarning (0 ms)
+[----------] 3 tests from LogIsVisibleTest (0 ms total)
+
+[----------] 6 tests from TypeTraitsTest
+[ RUN      ] TypeTraitsTest.true_type
+[       OK ] TypeTraitsTest.true_type (0 ms)
+[ RUN      ] TypeTraitsTest.false_type
+[       OK ] TypeTraitsTest.false_type (0 ms)
+[ RUN      ] TypeTraitsTest.is_reference
+[       OK ] TypeTraitsTest.is_reference (0 ms)
+[ RUN      ] TypeTraitsTest.is_pointer
+[       OK ] TypeTraitsTest.is_pointer (0 ms)
+[ RUN      ] TypeTraitsTest.type_equals
+[       OK ] TypeTraitsTest.type_equals (0 ms)
+[ RUN      ] TypeTraitsTest.remove_reference
+[       OK ] TypeTraitsTest.remove_reference (0 ms)
+[----------] 6 tests from TypeTraitsTest (0 ms total)
+
+[----------] 3 tests from ArrayEqTest
+[ RUN      ] ArrayEqTest.WorksForDegeneratedArrays
+[       OK ] ArrayEqTest.WorksForDegeneratedArrays (0 ms)
+[ RUN      ] ArrayEqTest.WorksForOneDimensionalArrays
+[       OK ] ArrayEqTest.WorksForOneDimensionalArrays (0 ms)
+[ RUN      ] ArrayEqTest.WorksForTwoDimensionalArrays
+[       OK ] ArrayEqTest.WorksForTwoDimensionalArrays (0 ms)
+[----------] 3 tests from ArrayEqTest (0 ms total)
+
+[----------] 2 tests from ArrayAwareFindTest
+[ RUN      ] ArrayAwareFindTest.WorksForOneDimensionalArray
+[       OK ] ArrayAwareFindTest.WorksForOneDimensionalArray (0 ms)
+[ RUN      ] ArrayAwareFindTest.WorksForTwoDimensionalArray
+[       OK ] ArrayAwareFindTest.WorksForTwoDimensionalArray (0 ms)
+[----------] 2 tests from ArrayAwareFindTest (16 ms total)
+
+[----------] 3 tests from CopyArrayTest
+[ RUN      ] CopyArrayTest.WorksForDegeneratedArrays
+[       OK ] CopyArrayTest.WorksForDegeneratedArrays (0 ms)
+[ RUN      ] CopyArrayTest.WorksForOneDimensionalArrays
+[       OK ] CopyArrayTest.WorksForOneDimensionalArrays (0 ms)
+[ RUN      ] CopyArrayTest.WorksForTwoDimensionalArrays
+[       OK ] CopyArrayTest.WorksForTwoDimensionalArrays (0 ms)
+[----------] 3 tests from CopyArrayTest (0 ms total)
+
+[----------] 5 tests from NativeArrayTest
+[ RUN      ] NativeArrayTest.ConstructorFromArrayWorks
+[       OK ] NativeArrayTest.ConstructorFromArrayWorks (0 ms)
+[ RUN      ] NativeArrayTest.CreatesAndDeletesCopyOfArrayWhenAskedTo
+[       OK ] NativeArrayTest.CreatesAndDeletesCopyOfArrayWhenAskedTo (0 ms)
+[ RUN      ] NativeArrayTest.TypeMembersAreCorrect
+[       OK ] NativeArrayTest.TypeMembersAreCorrect (0 ms)
+[ RUN      ] NativeArrayTest.MethodsWork
+[       OK ] NativeArrayTest.MethodsWork (0 ms)
+[ RUN      ] NativeArrayTest.WorksForTwoDimensionalArray
+[       OK ] NativeArrayTest.WorksForTwoDimensionalArray (0 ms)
+[----------] 5 tests from NativeArrayTest (0 ms total)
+
+[----------] 3 tests from StlContainerViewTest
+[ RUN      ] StlContainerViewTest.WorksForStlContainer
+[       OK ] StlContainerViewTest.WorksForStlContainer (0 ms)
+[ RUN      ] StlContainerViewTest.WorksForStaticNativeArray
+[       OK ] StlContainerViewTest.WorksForStaticNativeArray (0 ms)
+[ RUN      ] StlContainerViewTest.WorksForDynamicNativeArray
+[       OK ] StlContainerViewTest.WorksForDynamicNativeArray (0 ms)
+[----------] 3 tests from StlContainerViewTest (0 ms total)
+
+[----------] 13 tests from ArgsTest
+[ RUN      ] ArgsTest.AcceptsZeroTemplateArg
+[       OK ] ArgsTest.AcceptsZeroTemplateArg (0 ms)
+[ RUN      ] ArgsTest.AcceptsOneTemplateArg
+[       OK ] ArgsTest.AcceptsOneTemplateArg (0 ms)
+[ RUN      ] ArgsTest.AcceptsTwoTemplateArgs
+[       OK ] ArgsTest.AcceptsTwoTemplateArgs (0 ms)
+[ RUN      ] ArgsTest.AcceptsRepeatedTemplateArgs
+[       OK ] ArgsTest.AcceptsRepeatedTemplateArgs (0 ms)
+[ RUN      ] ArgsTest.AcceptsDecreasingTemplateArgs
+[       OK ] ArgsTest.AcceptsDecreasingTemplateArgs (0 ms)
+[ RUN      ] ArgsTest.AcceptsMoreTemplateArgsThanArityOfOriginalTuple
+[       OK ] ArgsTest.AcceptsMoreTemplateArgsThanArityOfOriginalTuple (0 ms)
+[ RUN      ] ArgsTest.CanBeNested
+[       OK ] ArgsTest.CanBeNested (0 ms)
+[ RUN      ] ArgsTest.CanMatchTupleByValue
+[       OK ] ArgsTest.CanMatchTupleByValue (0 ms)
+[ RUN      ] ArgsTest.CanMatchTupleByReference
+[       OK ] ArgsTest.CanMatchTupleByReference (0 ms)
+[ RUN      ] ArgsTest.AcceptsTenTemplateArgs
+[       OK ] ArgsTest.AcceptsTenTemplateArgs (0 ms)
+[ RUN      ] ArgsTest.DescirbesSelfCorrectly
+[       OK ] ArgsTest.DescirbesSelfCorrectly (0 ms)
+[ RUN      ] ArgsTest.DescirbesNestedArgsCorrectly
+[       OK ] ArgsTest.DescirbesNestedArgsCorrectly (0 ms)
+[ RUN      ] ArgsTest.DescribesNegationCorrectly
+[       OK ] ArgsTest.DescribesNegationCorrectly (0 ms)
+[----------] 13 tests from ArgsTest (0 ms total)
+
+[----------] 27 tests from ElementsAreTest
+[ RUN      ] ElementsAreTest.CanDescribeExpectingNoElement
+[       OK ] ElementsAreTest.CanDescribeExpectingNoElement (0 ms)
+[ RUN      ] ElementsAreTest.CanDescribeExpectingOneElement
+[       OK ] ElementsAreTest.CanDescribeExpectingOneElement (0 ms)
+[ RUN      ] ElementsAreTest.CanDescribeExpectingManyElements
+[       OK ] ElementsAreTest.CanDescribeExpectingManyElements (0 ms)
+[ RUN      ] ElementsAreTest.CanDescribeNegationOfExpectingNoElement
+[       OK ] ElementsAreTest.CanDescribeNegationOfExpectingNoElement (0 ms)
+[ RUN      ] ElementsAreTest.CanDescribeNegationOfExpectingOneElment
+[       OK ] ElementsAreTest.CanDescribeNegationOfExpectingOneElment (0 ms)
+[ RUN      ] ElementsAreTest.CanDescribeNegationOfExpectingManyElements
+[       OK ] ElementsAreTest.CanDescribeNegationOfExpectingManyElements (0 ms)
+[ RUN      ] ElementsAreTest.DoesNotExplainTrivialMatch
+[       OK ] ElementsAreTest.DoesNotExplainTrivialMatch (0 ms)
+[ RUN      ] ElementsAreTest.ExplainsNonTrivialMatch
+[       OK ] ElementsAreTest.ExplainsNonTrivialMatch (0 ms)
+[ RUN      ] ElementsAreTest.CanExplainMismatchWrongSize
+[       OK ] ElementsAreTest.CanExplainMismatchWrongSize (0 ms)
+[ RUN      ] ElementsAreTest.CanExplainMismatchRightSize
+[       OK ] ElementsAreTest.CanExplainMismatchRightSize (0 ms)
+[ RUN      ] ElementsAreTest.MatchesOneElementVector
+[       OK ] ElementsAreTest.MatchesOneElementVector (0 ms)
+[ RUN      ] ElementsAreTest.MatchesOneElementList
+[       OK ] ElementsAreTest.MatchesOneElementList (0 ms)
+[ RUN      ] ElementsAreTest.MatchesThreeElementVector
+[       OK ] ElementsAreTest.MatchesThreeElementVector (0 ms)
+[ RUN      ] ElementsAreTest.MatchesOneElementEqMatcher
+[       OK ] ElementsAreTest.MatchesOneElementEqMatcher (0 ms)
+[ RUN      ] ElementsAreTest.MatchesOneElementAnyMatcher
+[       OK ] ElementsAreTest.MatchesOneElementAnyMatcher (0 ms)
+[ RUN      ] ElementsAreTest.MatchesOneElementValue
+[       OK ] ElementsAreTest.MatchesOneElementValue (0 ms)
+[ RUN      ] ElementsAreTest.MatchesThreeElementsMixedMatchers
+[       OK ] ElementsAreTest.MatchesThreeElementsMixedMatchers (0 ms)
+[ RUN      ] ElementsAreTest.MatchesTenElementVector
+[       OK ] ElementsAreTest.MatchesTenElementVector (0 ms)
+[ RUN      ] ElementsAreTest.DoesNotMatchWrongSize
+[       OK ] ElementsAreTest.DoesNotMatchWrongSize (0 ms)
+[ RUN      ] ElementsAreTest.DoesNotMatchWrongValue
+[       OK ] ElementsAreTest.DoesNotMatchWrongValue (0 ms)
+[ RUN      ] ElementsAreTest.DoesNotMatchWrongOrder
+[       OK ] ElementsAreTest.DoesNotMatchWrongOrder (0 ms)
+[ RUN      ] ElementsAreTest.WorksForNestedContainer
+[       OK ] ElementsAreTest.WorksForNestedContainer (0 ms)
+[ RUN      ] ElementsAreTest.WorksWithByRefElementMatchers
+[       OK ] ElementsAreTest.WorksWithByRefElementMatchers (0 ms)
+[ RUN      ] ElementsAreTest.WorksWithContainerPointerUsingPointee
+[       OK ] ElementsAreTest.WorksWithContainerPointerUsingPointee (0 ms)
+[ RUN      ] ElementsAreTest.WorksWithNativeArrayPassedByReference
+[       OK ] ElementsAreTest.WorksWithNativeArrayPassedByReference (0 ms)
+[ RUN      ] ElementsAreTest.WorksWithNativeArrayPassedAsPointerAndSize
+[       OK ] ElementsAreTest.WorksWithNativeArrayPassedAsPointerAndSize (0 ms)
+[ RUN      ] ElementsAreTest.WorksWithTwoDimensionalNativeArray
+[       OK ] ElementsAreTest.WorksWithTwoDimensionalNativeArray (0 ms)
+[----------] 27 tests from ElementsAreTest (0 ms total)
+
+[----------] 5 tests from ElementsAreArrayTest
+[ RUN      ] ElementsAreArrayTest.CanBeCreatedWithValueArray
+[       OK ] ElementsAreArrayTest.CanBeCreatedWithValueArray (0 ms)
+[ RUN      ] ElementsAreArrayTest.CanBeCreatedWithArraySize
+[       OK ] ElementsAreArrayTest.CanBeCreatedWithArraySize (0 ms)
+[ RUN      ] ElementsAreArrayTest.CanBeCreatedWithoutArraySize
+[       OK ] ElementsAreArrayTest.CanBeCreatedWithoutArraySize (0 ms)
+[ RUN      ] ElementsAreArrayTest.CanBeCreatedWithMatcherArray
+[       OK ] ElementsAreArrayTest.CanBeCreatedWithMatcherArray (0 ms)
+[ RUN      ] ElementsAreArrayTest.WorksWithNativeArray
+[       OK ] ElementsAreArrayTest.WorksWithNativeArray (0 ms)
+[----------] 5 tests from ElementsAreArrayTest (0 ms total)
+
+[----------] 7 tests from MatcherMacroTest
+[ RUN      ] MatcherMacroTest.Works
+[       OK ] MatcherMacroTest.Works (0 ms)
+[ RUN      ] MatcherMacroTest.CanExplainMatchResult
+[       OK ] MatcherMacroTest.CanExplainMatchResult (0 ms)
+[ RUN      ] MatcherMacroTest.CreatingMatcherWithBadDescriptionGeneratesNonfatalFailure
+[       OK ] MatcherMacroTest.CreatingMatcherWithBadDescriptionGeneratesNonfatalFailure
+(0 ms)
+[ RUN      ] MatcherMacroTest.AcceptsValidDescription
+[       OK ] MatcherMacroTest.AcceptsValidDescription (0 ms)
+[ RUN      ] MatcherMacroTest.CanReferenceArgType
+[       OK ] MatcherMacroTest.CanReferenceArgType (0 ms)
+[ RUN      ] MatcherMacroTest.WorksInNamespace
+[       OK ] MatcherMacroTest.WorksInNamespace (0 ms)
+[ RUN      ] MatcherMacroTest.CanBeComposedUsingValue
+[       OK ] MatcherMacroTest.CanBeComposedUsingValue (0 ms)
+[----------] 7 tests from MatcherMacroTest (0 ms total)
+
+[----------] 5 tests from MatcherPMacroTest
+[ RUN      ] MatcherPMacroTest.Works
+[       OK ] MatcherPMacroTest.Works (0 ms)
+[ RUN      ] MatcherPMacroTest.CreatingMatcherWithBadDescriptionGeneratesNonfatalFailure
+[       OK ] MatcherPMacroTest.CreatingMatcherWithBadDescriptionGeneratesNonfatalFailure
+(0 ms)
+[ RUN      ] MatcherPMacroTest.AcceptsValidDescription
+[       OK ] MatcherPMacroTest.AcceptsValidDescription (0 ms)
+[ RUN      ] MatcherPMacroTest.GeneratesCorrectDescription
+[       OK ] MatcherPMacroTest.GeneratesCorrectDescription (0 ms)
+[ RUN      ] MatcherPMacroTest.WorksWhenExplicitlyInstantiatedWithReference
+[       OK ] MatcherPMacroTest.WorksWhenExplicitlyInstantiatedWithReference
+(0 ms)
+[----------] 5 tests from MatcherPMacroTest (0 ms total)
+
+[----------] 11 tests from MatcherPnMacroTest
+[ RUN      ] MatcherPnMacroTest.CreatingMatcherWithBadDescriptionGeneratesNonfatalFailure
+[       OK ] MatcherPnMacroTest.CreatingMatcherWithBadDescriptionGeneratesNonfatalFailure
+(0 ms)
+[ RUN      ] MatcherPnMacroTest.AcceptsValidDescription
+[       OK ] MatcherPnMacroTest.AcceptsValidDescription (0 ms)
+[ RUN      ] MatcherPnMacroTest.CanReferenceParamTypes
+[       OK ] MatcherPnMacroTest.CanReferenceParamTypes (0 ms)
+[ RUN      ] MatcherPnMacroTest.WorksWhenExplicitlyInstantiatedWithReferences
+[       OK ] MatcherPnMacroTest.WorksWhenExplicitlyInstantiatedWithReferences
+(0 ms)
+[ RUN      ] MatcherPnMacroTest.GeneratesCorretDescriptionWhenExplicitlyInstantiatedWithReferences
+[       OK ] MatcherPnMacroTest.GeneratesCorretDescriptionWhenExplicitlyInstantiatedWithReferences
+(0 ms)
+[ RUN      ] MatcherPnMacroTest.Works
+[       OK ] MatcherPnMacroTest.Works (0 ms)
+[ RUN      ] MatcherPnMacroTest.CanBeOverloadedOnNumberOfParameters
+[       OK ] MatcherPnMacroTest.CanBeOverloadedOnNumberOfParameters (0 ms)
+[ RUN      ] MatcherPnMacroTest.WorksForDifferentParameterTypes
+[       OK ] MatcherPnMacroTest.WorksForDifferentParameterTypes (0 ms)
+[ RUN      ] MatcherPnMacroTest.SimpleTypePromotion
+[       OK ] MatcherPnMacroTest.SimpleTypePromotion (0 ms)
+[ RUN      ] MatcherPnMacroTest.TypesAreCorrect
+[       OK ] MatcherPnMacroTest.TypesAreCorrect (0 ms)
+[ RUN      ] MatcherPnMacroTest.CanUseMatcherTypedParameterInValue
+[       OK ] MatcherPnMacroTest.CanUseMatcherTypedParameterInValue (0 ms)
+[----------] 11 tests from MatcherPnMacroTest (0 ms total)
+
+[----------] 13 tests from ContainsTest
+[ RUN      ] ContainsTest.ListMatchesWhenElementIsInContainer
+[       OK ] ContainsTest.ListMatchesWhenElementIsInContainer (0 ms)
+[ RUN      ] ContainsTest.ListDoesNotMatchWhenElementIsNotInContainer
+[       OK ] ContainsTest.ListDoesNotMatchWhenElementIsNotInContainer (0 ms)
+[ RUN      ] ContainsTest.SetMatchesWhenElementIsInContainer
+[       OK ] ContainsTest.SetMatchesWhenElementIsInContainer (0 ms)
+[ RUN      ] ContainsTest.SetDoesNotMatchWhenElementIsNotInContainer
+[       OK ] ContainsTest.SetDoesNotMatchWhenElementIsNotInContainer (0 ms)
+[ RUN      ] ContainsTest.DescribesItselfCorrectly
+[       OK ] ContainsTest.DescribesItselfCorrectly (0 ms)
+[ RUN      ] ContainsTest.ExplainsMatchResultCorrectly
+[       OK ] ContainsTest.ExplainsMatchResultCorrectly (0 ms)
+[ RUN      ] ContainsTest.MapMatchesWhenElementIsInContainer
+[       OK ] ContainsTest.MapMatchesWhenElementIsInContainer (0 ms)
+[ RUN      ] ContainsTest.MapDoesNotMatchWhenElementIsNotInContainer
+[       OK ] ContainsTest.MapDoesNotMatchWhenElementIsNotInContainer (0 ms)
+[ RUN      ] ContainsTest.ArrayMatchesWhenElementIsInContainer
+[       OK ] ContainsTest.ArrayMatchesWhenElementIsInContainer (0 ms)
+[ RUN      ] ContainsTest.ArrayDoesNotMatchWhenElementIsNotInContainer
+[       OK ] ContainsTest.ArrayDoesNotMatchWhenElementIsNotInContainer (0 ms)
+[ RUN      ] ContainsTest.AcceptsMatcher
+[       OK ] ContainsTest.AcceptsMatcher (0 ms)
+[ RUN      ] ContainsTest.WorksForNativeArrayAsTuple
+[       OK ] ContainsTest.WorksForNativeArrayAsTuple (0 ms)
+[ RUN      ] ContainsTest.WorksForTwoDimensionalNativeArray
+[       OK ] ContainsTest.WorksForTwoDimensionalNativeArray (0 ms)
+[----------] 13 tests from ContainsTest (16 ms total)
+
+[----------] 4 tests from MatcherTupleTest
+[ RUN      ] MatcherTupleTest.ForSize0
+[       OK ] MatcherTupleTest.ForSize0 (0 ms)
+[ RUN      ] MatcherTupleTest.ForSize1
+[       OK ] MatcherTupleTest.ForSize1 (0 ms)
+[ RUN      ] MatcherTupleTest.ForSize2
+[       OK ] MatcherTupleTest.ForSize2 (0 ms)
+[ RUN      ] MatcherTupleTest.ForSize5
+[       OK ] MatcherTupleTest.ForSize5 (0 ms)
+[----------] 4 tests from MatcherTupleTest (0 ms total)
+
+[----------] 4 tests from FunctionTest
+[ RUN      ] FunctionTest.Nullary
+[       OK ] FunctionTest.Nullary (0 ms)
+[ RUN      ] FunctionTest.Unary
+[       OK ] FunctionTest.Unary (0 ms)
+[ RUN      ] FunctionTest.Binary
+[       OK ] FunctionTest.Binary (0 ms)
+[ RUN      ] FunctionTest.LongArgumentList
+[       OK ] FunctionTest.LongArgumentList (0 ms)
+[----------] 4 tests from FunctionTest (0 ms total)
+
+[----------] 14 tests from FunctionMockerTest
+[ RUN      ] FunctionMockerTest.MocksVoidFunction
+[       OK ] FunctionMockerTest.MocksVoidFunction (0 ms)
+[ RUN      ] FunctionMockerTest.MocksNullaryFunction
+[       OK ] FunctionMockerTest.MocksNullaryFunction (0 ms)
+[ RUN      ] FunctionMockerTest.MocksUnaryFunction
+
+GMOCK WARNING:
+../test/gmock-generated-function-mockers_test.cc:185: Too few actions
+specified in EXPECT_CALL(mock_foo_, Unary(Eq(2)))...
+Expected to be called twice, but has only 1 WillOnce().
+GMOCK WARNING:
+../test/gmock-generated-function-mockers_test.cc:185: Actions ran out
+in EXPECT_CALL(mock_foo_, Unary(Eq(2)))...
+Called 2 times, but only 1 WillOnce() is specified - returning default value.
+Stack trace:
+[       OK ] FunctionMockerTest.MocksUnaryFunction (0 ms)
+[ RUN      ] FunctionMockerTest.MocksBinaryFunction
+[       OK ] FunctionMockerTest.MocksBinaryFunction (0 ms)
+[ RUN      ] FunctionMockerTest.MocksDecimalFunction
+[       OK ] FunctionMockerTest.MocksDecimalFunction (0 ms)
+[ RUN      ] FunctionMockerTest.MocksFunctionWithNonConstReferenceArgument
+[       OK ] FunctionMockerTest.MocksFunctionWithNonConstReferenceArgument
+(0 ms)
+[ RUN      ] FunctionMockerTest.MocksFunctionWithConstReferenceArgument
+[       OK ] FunctionMockerTest.MocksFunctionWithConstReferenceArgument (0 ms)
+[ RUN      ] FunctionMockerTest.MocksFunctionsOverloadedOnArgumentNumber
+[       OK ] FunctionMockerTest.MocksFunctionsOverloadedOnArgumentNumber (0 ms)
+[ RUN      ] FunctionMockerTest.MocksFunctionsOverloadedOnArgumentType
+[       OK ] FunctionMockerTest.MocksFunctionsOverloadedOnArgumentType (0 ms)
+[ RUN      ] FunctionMockerTest.MocksFunctionsOverloadedOnConstnessOfThis
+[       OK ] FunctionMockerTest.MocksFunctionsOverloadedOnConstnessOfThis (0 ms)
+[ RUN      ] FunctionMockerTest.MocksNullaryFunctionWithCallType
+[       OK ] FunctionMockerTest.MocksNullaryFunctionWithCallType (0 ms)
+[ RUN      ] FunctionMockerTest.MocksUnaryFunctionWithCallType
+[       OK ] FunctionMockerTest.MocksUnaryFunctionWithCallType (0 ms)
+[ RUN      ] FunctionMockerTest.MocksDecimalFunctionWithCallType
+[       OK ] FunctionMockerTest.MocksDecimalFunctionWithCallType (0 ms)
+[ RUN      ] FunctionMockerTest.MocksFunctionsConstFunctionWithCallType
+[       OK ] FunctionMockerTest.MocksFunctionsConstFunctionWithCallType (0 ms)
+[----------] 14 tests from FunctionMockerTest (0 ms total)
+
+[----------] 1 test from ExpectCallTest
+[ RUN      ] ExpectCallTest.UnmentionedFunctionCanBeCalledAnyNumberOfTimes
+
+GMOCK WARNING:
+Uninteresting mock function call - returning directly.
+   Function call: DoB()
+Stack trace:
+
+GMOCK WARNING:
+Uninteresting mock function call - returning directly.
+   Function call: DoB()
+Stack trace:
+
+GMOCK WARNING:
+Uninteresting mock function call - returning directly.
+   Function call: DoB()
+Stack trace:
+[       OK ] ExpectCallTest.UnmentionedFunctionCanBeCalledAnyNumberOfTimes
+(0 ms)
+[----------] 1 test from ExpectCallTest (0 ms total)
+
+[----------] 1 test from TemplateMockTest
+[ RUN      ] TemplateMockTest.Works
+[       OK ] TemplateMockTest.Works (0 ms)
+[----------] 1 test from TemplateMockTest (0 ms total)
+
+[----------] 1 test from TemplateMockTestWithCallType
+[ RUN      ] TemplateMockTestWithCallType.Works
+[       OK ] TemplateMockTestWithCallType.Works (0 ms)
+[----------] 1 test from TemplateMockTestWithCallType (0 ms total)
+
+[----------] 2 tests from OverloadedMockMethodTest
+[ RUN      ] OverloadedMockMethodTest.CanOverloadOnArgNumberInMacroBody
+[       OK ] OverloadedMockMethodTest.CanOverloadOnArgNumberInMacroBody (0 ms)
+[ RUN      ] OverloadedMockMethodTest.CanOverloadOnConstnessInMacroBody
+[       OK ] OverloadedMockMethodTest.CanOverloadOnConstnessInMacroBody (0 ms)
+[----------] 2 tests from OverloadedMockMethodTest (0 ms total)
+
+[----------] 5 tests from MockFunctionTest
+[ RUN      ] MockFunctionTest.WorksForVoidNullary
+[       OK ] MockFunctionTest.WorksForVoidNullary (0 ms)
+[ RUN      ] MockFunctionTest.WorksForNonVoidNullary
+[       OK ] MockFunctionTest.WorksForNonVoidNullary (0 ms)
+[ RUN      ] MockFunctionTest.WorksForVoidUnary
+[       OK ] MockFunctionTest.WorksForVoidUnary (0 ms)
+[ RUN      ] MockFunctionTest.WorksForNonVoidBinary
+[       OK ] MockFunctionTest.WorksForNonVoidBinary (0 ms)
+[ RUN      ] MockFunctionTest.WorksFor10Arguments
+[       OK ] MockFunctionTest.WorksFor10Arguments (0 ms)
+[----------] 5 tests from MockFunctionTest (0 ms total)
+
+[----------] 14 tests from InvokeArgumentTest
+[ RUN      ] InvokeArgumentTest.Function0
+[       OK ] InvokeArgumentTest.Function0 (0 ms)
+[ RUN      ] InvokeArgumentTest.Functor1
+[       OK ] InvokeArgumentTest.Functor1 (0 ms)
+[ RUN      ] InvokeArgumentTest.Function5
+[       OK ] InvokeArgumentTest.Function5 (0 ms)
+[ RUN      ] InvokeArgumentTest.Functor5
+[       OK ] InvokeArgumentTest.Functor5 (0 ms)
+[ RUN      ] InvokeArgumentTest.Function6
+[       OK ] InvokeArgumentTest.Function6 (0 ms)
+[ RUN      ] InvokeArgumentTest.Functor6
+[       OK ] InvokeArgumentTest.Functor6 (0 ms)
+[ RUN      ] InvokeArgumentTest.Function7
+[       OK ] InvokeArgumentTest.Function7 (0 ms)
+[ RUN      ] InvokeArgumentTest.Function8
+[       OK ] InvokeArgumentTest.Function8 (0 ms)
+[ RUN      ] InvokeArgumentTest.Function9
+[       OK ] InvokeArgumentTest.Function9 (0 ms)
+[ RUN      ] InvokeArgumentTest.Function10
+[       OK ] InvokeArgumentTest.Function10 (0 ms)
+[ RUN      ] InvokeArgumentTest.ByPointerFunction
+[       OK ] InvokeArgumentTest.ByPointerFunction (0 ms)
+[ RUN      ] InvokeArgumentTest.FunctionWithCStringLiteral
+[       OK ] InvokeArgumentTest.FunctionWithCStringLiteral (0 ms)
+[ RUN      ] InvokeArgumentTest.ByConstReferenceFunction
+[       OK ] InvokeArgumentTest.ByConstReferenceFunction (0 ms)
+[ RUN      ] InvokeArgumentTest.ByExplicitConstReferenceFunction
+[       OK ] InvokeArgumentTest.ByExplicitConstReferenceFunction (0 ms)
+[----------] 14 tests from InvokeArgumentTest (0 ms total)
+
+[----------] 16 tests from WithArgsTest
+[ RUN      ] WithArgsTest.OneArg
+[       OK ] WithArgsTest.OneArg (0 ms)
+[ RUN      ] WithArgsTest.TwoArgs
+[       OK ] WithArgsTest.TwoArgs (0 ms)
+[ RUN      ] WithArgsTest.ThreeArgs
+[       OK ] WithArgsTest.ThreeArgs (0 ms)
+[ RUN      ] WithArgsTest.FourArgs
+[       OK ] WithArgsTest.FourArgs (0 ms)
+[ RUN      ] WithArgsTest.FiveArgs
+[       OK ] WithArgsTest.FiveArgs (0 ms)
+[ RUN      ] WithArgsTest.SixArgs
+[       OK ] WithArgsTest.SixArgs (0 ms)
+[ RUN      ] WithArgsTest.SevenArgs
+[       OK ] WithArgsTest.SevenArgs (0 ms)
+[ RUN      ] WithArgsTest.EightArgs
+[       OK ] WithArgsTest.EightArgs (0 ms)
+[ RUN      ] WithArgsTest.NineArgs
+[       OK ] WithArgsTest.NineArgs (0 ms)
+[ RUN      ] WithArgsTest.TenArgs
+[       OK ] WithArgsTest.TenArgs (0 ms)
+[ RUN      ] WithArgsTest.NonInvokeAction
+[       OK ] WithArgsTest.NonInvokeAction (0 ms)
+[ RUN      ] WithArgsTest.Identity
+[       OK ] WithArgsTest.Identity (0 ms)
+[ RUN      ] WithArgsTest.RepeatedArguments
+[       OK ] WithArgsTest.RepeatedArguments (0 ms)
+[ RUN      ] WithArgsTest.ReversedArgumentOrder
+[       OK ] WithArgsTest.ReversedArgumentOrder (0 ms)
+[ RUN      ] WithArgsTest.ArgsOfCompatibleTypes
+[       OK ] WithArgsTest.ArgsOfCompatibleTypes (0 ms)
+[ RUN      ] WithArgsTest.VoidAction
+[       OK ] WithArgsTest.VoidAction (0 ms)
+[----------] 16 tests from WithArgsTest (0 ms total)
+
+[----------] 9 tests from DoAllTest
+[ RUN      ] DoAllTest.TwoActions
+[       OK ] DoAllTest.TwoActions (0 ms)
+[ RUN      ] DoAllTest.ThreeActions
+[       OK ] DoAllTest.ThreeActions (0 ms)
+[ RUN      ] DoAllTest.FourActions
+[       OK ] DoAllTest.FourActions (0 ms)
+[ RUN      ] DoAllTest.FiveActions
+[       OK ] DoAllTest.FiveActions (0 ms)
+[ RUN      ] DoAllTest.SixActions
+[       OK ] DoAllTest.SixActions (0 ms)
+[ RUN      ] DoAllTest.SevenActions
+[       OK ] DoAllTest.SevenActions (0 ms)
+[ RUN      ] DoAllTest.EightActions
+[       OK ] DoAllTest.EightActions (0 ms)
+[ RUN      ] DoAllTest.NineActions
+[       OK ] DoAllTest.NineActions (0 ms)
+[ RUN      ] DoAllTest.TenActions
+[       OK ] DoAllTest.TenActions (0 ms)
+[----------] 9 tests from DoAllTest (0 ms total)
+
+[----------] 11 tests from ActionMacroTest
+[ RUN      ] ActionMacroTest.WorksWhenNotReferencingArguments
+[       OK ] ActionMacroTest.WorksWhenNotReferencingArguments (0 ms)
+[ RUN      ] ActionMacroTest.WorksWhenReturningVoid
+[       OK ] ActionMacroTest.WorksWhenReturningVoid (0 ms)
+[ RUN      ] ActionMacroTest.CanReferenceArgumentType
+[       OK ] ActionMacroTest.CanReferenceArgumentType (0 ms)
+[ RUN      ] ActionMacroTest.CanReferenceArgumentTuple
+[       OK ] ActionMacroTest.CanReferenceArgumentTuple (0 ms)
+[ RUN      ] ActionMacroTest.CanReferenceMockFunctionType
+[       OK ] ActionMacroTest.CanReferenceMockFunctionType (0 ms)
+[ RUN      ] ActionMacroTest.CanReferenceMockFunctionReturnType
+[       OK ] ActionMacroTest.CanReferenceMockFunctionReturnType (0 ms)
+[ RUN      ] ActionMacroTest.WorksForConstReferenceArg
+[       OK ] ActionMacroTest.WorksForConstReferenceArg (0 ms)
+[ RUN      ] ActionMacroTest.WorksForNonConstReferenceArg
+[       OK ] ActionMacroTest.WorksForNonConstReferenceArg (0 ms)
+[ RUN      ] ActionMacroTest.WorksInNamespace
+[       OK ] ActionMacroTest.WorksInNamespace (0 ms)
+[ RUN      ] ActionMacroTest.WorksForDifferentArgumentNumbers
+[       OK ] ActionMacroTest.WorksForDifferentArgumentNumbers (0 ms)
+[ RUN      ] ActionMacroTest.CanDefineOverloadedActions
+[       OK ] ActionMacroTest.CanDefineOverloadedActions (0 ms)
+[----------] 11 tests from ActionMacroTest (0 ms total)
+
+[----------] 3 tests from ActionPMacroTest
+[ RUN      ] ActionPMacroTest.DefinesParameterizedAction
+[       OK ] ActionPMacroTest.DefinesParameterizedAction (0 ms)
+[ RUN      ] ActionPMacroTest.CanReferenceArgumentAndParameterTypes
+[       OK ] ActionPMacroTest.CanReferenceArgumentAndParameterTypes (0 ms)
+[ RUN      ] ActionPMacroTest.WorksInCompatibleMockFunction
+[       OK ] ActionPMacroTest.WorksInCompatibleMockFunction (0 ms)
+[----------] 3 tests from ActionPMacroTest (0 ms total)
+
+[----------] 12 tests from ActionPnMacroTest
+[ RUN      ] ActionPnMacroTest.WorksFor3Parameters
+[       OK ] ActionPnMacroTest.WorksFor3Parameters (0 ms)
+[ RUN      ] ActionPnMacroTest.WorksFor4Parameters
+[       OK ] ActionPnMacroTest.WorksFor4Parameters (0 ms)
+[ RUN      ] ActionPnMacroTest.WorksFor5Parameters
+[       OK ] ActionPnMacroTest.WorksFor5Parameters (0 ms)
+[ RUN      ] ActionPnMacroTest.WorksFor6Parameters
+[       OK ] ActionPnMacroTest.WorksFor6Parameters (0 ms)
+[ RUN      ] ActionPnMacroTest.WorksFor7Parameters
+[       OK ] ActionPnMacroTest.WorksFor7Parameters (0 ms)
+[ RUN      ] ActionPnMacroTest.WorksFor8Parameters
+[       OK ] ActionPnMacroTest.WorksFor8Parameters (0 ms)
+[ RUN      ] ActionPnMacroTest.WorksFor9Parameters
+[       OK ] ActionPnMacroTest.WorksFor9Parameters (0 ms)
+[ RUN      ] ActionPnMacroTest.WorksFor10Parameters
+[       OK ] ActionPnMacroTest.WorksFor10Parameters (0 ms)
+[ RUN      ] ActionPnMacroTest.SimpleTypePromotion
+[       OK ] ActionPnMacroTest.SimpleTypePromotion (0 ms)
+[ RUN      ] ActionPnMacroTest.CanPartiallyRestrictParameterTypes
+[       OK ] ActionPnMacroTest.CanPartiallyRestrictParameterTypes (0 ms)
+[ RUN      ] ActionPnMacroTest.TypesAreCorrect
+[       OK ] ActionPnMacroTest.TypesAreCorrect (0 ms)
+[ RUN      ] ActionPnMacroTest.CanExplicitlyInstantiateWithReferenceTypes
+[       OK ] ActionPnMacroTest.CanExplicitlyInstantiateWithReferenceTypes (0 ms)
+[----------] 12 tests from ActionPnMacroTest (15 ms total)
+
+[----------] 5 tests from ReturnNewTest
+[ RUN      ] ReturnNewTest.NoArgs
+[       OK ] ReturnNewTest.NoArgs (0 ms)
+[ RUN      ] ReturnNewTest.Unary
+[       OK ] ReturnNewTest.Unary (0 ms)
+[ RUN      ] ReturnNewTest.UnaryWorksWhenMockMethodHasArgs
+[       OK ] ReturnNewTest.UnaryWorksWhenMockMethodHasArgs (0 ms)
+[ RUN      ] ReturnNewTest.UnaryWorksWhenMockMethodReturnsPointerToConst
+[       OK ] ReturnNewTest.UnaryWorksWhenMockMethodReturnsPointerToConst (0 ms)
+[ RUN      ] ReturnNewTest.ConstructorThatTakes10Arguments
+[       OK ] ReturnNewTest.ConstructorThatTakes10Arguments (0 ms)
+[----------] 5 tests from ReturnNewTest (0 ms total)
+
+[----------] 7 tests from ActionTemplateTest
+[ RUN      ] ActionTemplateTest.WorksWithoutValueParam
+[       OK ] ActionTemplateTest.WorksWithoutValueParam (0 ms)
+[ RUN      ] ActionTemplateTest.WorksWithValueParams
+[       OK ] ActionTemplateTest.WorksWithValueParams (0 ms)
+[ RUN      ] ActionTemplateTest.WorksForIntegralTemplateParams
+[       OK ] ActionTemplateTest.WorksForIntegralTemplateParams (0 ms)
+[ RUN      ] ActionTemplateTest.WorksForTemplateTemplateParameters
+[       OK ] ActionTemplateTest.WorksForTemplateTemplateParameters (0 ms)
+[ RUN      ] ActionTemplateTest.WorksFor10TemplateParameters
+[       OK ] ActionTemplateTest.WorksFor10TemplateParameters (0 ms)
+[ RUN      ] ActionTemplateTest.WorksFor10ValueParameters
+[       OK ] ActionTemplateTest.WorksFor10ValueParameters (0 ms)
+[ RUN      ] ActionTemplateTest.CanBeOverloadedOnNumberOfValueParameters
+[       OK ] ActionTemplateTest.CanBeOverloadedOnNumberOfValueParameters (0 ms)
+[----------] 7 tests from ActionTemplateTest (0 ms total)
+
+[----------] 4 tests from CardinalityTest
+[ RUN      ] CardinalityTest.IsDefaultConstructable
+[       OK ] CardinalityTest.IsDefaultConstructable (0 ms)
+[ RUN      ] CardinalityTest.IsCopyable
+[       OK ] CardinalityTest.IsCopyable (0 ms)
+[ RUN      ] CardinalityTest.IsOverSaturatedByCallCountWorks
+[       OK ] CardinalityTest.IsOverSaturatedByCallCountWorks (0 ms)
+[ RUN      ] CardinalityTest.CanDescribeActualCallCount
+[       OK ] CardinalityTest.CanDescribeActualCallCount (0 ms)
+[----------] 4 tests from CardinalityTest (0 ms total)
+
+[----------] 1 test from AnyNumber
+[ RUN      ] AnyNumber.Works
+[       OK ] AnyNumber.Works (0 ms)
+[----------] 1 test from AnyNumber (0 ms total)
+
+[----------] 1 test from AnyNumberTest
+[ RUN      ] AnyNumberTest.HasCorrectBounds
+[       OK ] AnyNumberTest.HasCorrectBounds (0 ms)
+[----------] 1 test from AnyNumberTest (0 ms total)
+
+[----------] 4 tests from AtLeastTest
+[ RUN      ] AtLeastTest.OnNegativeNumber
+[       OK ] AtLeastTest.OnNegativeNumber (0 ms)
+[ RUN      ] AtLeastTest.OnZero
+[       OK ] AtLeastTest.OnZero (0 ms)
+[ RUN      ] AtLeastTest.OnPositiveNumber
+[       OK ] AtLeastTest.OnPositiveNumber (0 ms)
+[ RUN      ] AtLeastTest.HasCorrectBounds
+[       OK ] AtLeastTest.HasCorrectBounds (0 ms)
+[----------] 4 tests from AtLeastTest (0 ms total)
+
+[----------] 4 tests from AtMostTest
+[ RUN      ] AtMostTest.OnNegativeNumber
+[       OK ] AtMostTest.OnNegativeNumber (0 ms)
+[ RUN      ] AtMostTest.OnZero
+[       OK ] AtMostTest.OnZero (0 ms)
+[ RUN      ] AtMostTest.OnPositiveNumber
+[       OK ] AtMostTest.OnPositiveNumber (0 ms)
+[ RUN      ] AtMostTest.HasCorrectBounds
+[       OK ] AtMostTest.HasCorrectBounds (0 ms)
+[----------] 4 tests from AtMostTest (0 ms total)
+
+[----------] 8 tests from BetweenTest
+[ RUN      ] BetweenTest.OnNegativeStart
+[       OK ] BetweenTest.OnNegativeStart (0 ms)
+[ RUN      ] BetweenTest.OnNegativeEnd
+[       OK ] BetweenTest.OnNegativeEnd (0 ms)
+[ RUN      ] BetweenTest.OnStartBiggerThanEnd
+[       OK ] BetweenTest.OnStartBiggerThanEnd (0 ms)
+[ RUN      ] BetweenTest.OnZeroStartAndZeroEnd
+[       OK ] BetweenTest.OnZeroStartAndZeroEnd (0 ms)
+[ RUN      ] BetweenTest.OnZeroStartAndNonZeroEnd
+[       OK ] BetweenTest.OnZeroStartAndNonZeroEnd (0 ms)
+[ RUN      ] BetweenTest.OnSameStartAndEnd
+[       OK ] BetweenTest.OnSameStartAndEnd (0 ms)
+[ RUN      ] BetweenTest.OnDifferentStartAndEnd
+[       OK ] BetweenTest.OnDifferentStartAndEnd (0 ms)
+[ RUN      ] BetweenTest.HasCorrectBounds
+[       OK ] BetweenTest.HasCorrectBounds (0 ms)
+[----------] 8 tests from BetweenTest (0 ms total)
+
+[----------] 4 tests from ExactlyTest
+[ RUN      ] ExactlyTest.OnNegativeNumber
+[       OK ] ExactlyTest.OnNegativeNumber (0 ms)
+[ RUN      ] ExactlyTest.OnZero
+[       OK ] ExactlyTest.OnZero (0 ms)
+[ RUN      ] ExactlyTest.OnPositiveNumber
+[       OK ] ExactlyTest.OnPositiveNumber (0 ms)
+[ RUN      ] ExactlyTest.HasCorrectBounds
+[       OK ] ExactlyTest.HasCorrectBounds (0 ms)
+[----------] 4 tests from ExactlyTest (0 ms total)
+
+[----------] 1 test from MakeCardinalityTest
+[ RUN      ] MakeCardinalityTest.ConstructsCardinalityFromInterface
+[       OK ] MakeCardinalityTest.ConstructsCardinalityFromInterface (0 ms)
+[----------] 1 test from MakeCardinalityTest (0 ms total)
+
+[----------] 10 tests from BuiltInDefaultValueTest
+[ RUN      ] BuiltInDefaultValueTest.IsNullForPointerTypes
+[       OK ] BuiltInDefaultValueTest.IsNullForPointerTypes (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.ExistsForPointerTypes
+[       OK ] BuiltInDefaultValueTest.ExistsForPointerTypes (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.IsZeroForNumericTypes
+[       OK ] BuiltInDefaultValueTest.IsZeroForNumericTypes (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.ExistsForNumericTypes
+[       OK ] BuiltInDefaultValueTest.ExistsForNumericTypes (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.IsFalseForBool
+[       OK ] BuiltInDefaultValueTest.IsFalseForBool (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.BoolExists
+[       OK ] BuiltInDefaultValueTest.BoolExists (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.IsEmptyStringForString
+[       OK ] BuiltInDefaultValueTest.IsEmptyStringForString (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.ExistsForString
+[       OK ] BuiltInDefaultValueTest.ExistsForString (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.WorksForConstTypes
+[       OK ] BuiltInDefaultValueTest.WorksForConstTypes (0 ms)
+[ RUN      ] BuiltInDefaultValueTest.UserTypeHasNoDefault
+[       OK ] BuiltInDefaultValueTest.UserTypeHasNoDefault (0 ms)
+[----------] 10 tests from BuiltInDefaultValueTest (0 ms total)
+
+[----------] 3 tests from DefaultValueTest
+[ RUN      ] DefaultValueTest.IsInitiallyUnset
+[       OK ] DefaultValueTest.IsInitiallyUnset (0 ms)
+[ RUN      ] DefaultValueTest.CanBeSetAndUnset
+[       OK ] DefaultValueTest.CanBeSetAndUnset (0 ms)
+[ RUN      ] DefaultValueTest.GetWorksForVoid
+[       OK ] DefaultValueTest.GetWorksForVoid (0 ms)
+[----------] 3 tests from DefaultValueTest (0 ms total)
+
+[----------] 3 tests from DefaultValueOfReferenceTest
+[ RUN      ] DefaultValueOfReferenceTest.IsInitiallyUnset
+[       OK ] DefaultValueOfReferenceTest.IsInitiallyUnset (0 ms)
+[ RUN      ] DefaultValueOfReferenceTest.IsInitiallyNotExisting
+[       OK ] DefaultValueOfReferenceTest.IsInitiallyNotExisting (0 ms)
+[ RUN      ] DefaultValueOfReferenceTest.CanBeSetAndUnset
+[       OK ] DefaultValueOfReferenceTest.CanBeSetAndUnset (0 ms)
+[----------] 3 tests from DefaultValueOfReferenceTest (0 ms total)
+
+[----------] 2 tests from ActionInterfaceTest
+[ RUN      ] ActionInterfaceTest.CanBeImplementedByDefiningPerform
+[       OK ] ActionInterfaceTest.CanBeImplementedByDefiningPerform (0 ms)
+[ RUN      ] ActionInterfaceTest.MakeAction
+[       OK ] ActionInterfaceTest.MakeAction (0 ms)
+[----------] 2 tests from ActionInterfaceTest (0 ms total)
+
+[----------] 4 tests from ActionTest
+[ RUN      ] ActionTest.CanBeConstructedFromActionInterface
+[       OK ] ActionTest.CanBeConstructedFromActionInterface (0 ms)
+[ RUN      ] ActionTest.DelegatesWorkToActionInterface
+[       OK ] ActionTest.DelegatesWorkToActionInterface (0 ms)
+[ RUN      ] ActionTest.IsCopyable
+[       OK ] ActionTest.IsCopyable (0 ms)
+[ RUN      ] ActionTest.CanBeConvertedToOtherActionType
+[       OK ] ActionTest.CanBeConvertedToOtherActionType (0 ms)
+[----------] 4 tests from ActionTest (0 ms total)
+
+[----------] 2 tests from MakePolymorphicActionTest
+[ RUN      ] MakePolymorphicActionTest.ConstructsActionFromImpl
+[       OK ] MakePolymorphicActionTest.ConstructsActionFromImpl (0 ms)
+[ RUN      ] MakePolymorphicActionTest.WorksWhenPerformHasOneTemplateParameter
+[       OK ] MakePolymorphicActionTest.WorksWhenPerformHasOneTemplateParameter
+(0 ms)
+[----------] 2 tests from MakePolymorphicActionTest (0 ms total)
+
+[----------] 6 tests from ReturnTest
+[ RUN      ] ReturnTest.WorksForVoid
+[       OK ] ReturnTest.WorksForVoid (0 ms)
+[ RUN      ] ReturnTest.ReturnsGivenValue
+[       OK ] ReturnTest.ReturnsGivenValue (0 ms)
+[ RUN      ] ReturnTest.AcceptsStringLiteral
+[       OK ] ReturnTest.AcceptsStringLiteral (0 ms)
+[ RUN      ] ReturnTest.IsCovariant
+[       OK ] ReturnTest.IsCovariant (0 ms)
+[ RUN      ] ReturnTest.ConvertsArgumentWhenConverted
+[       OK ] ReturnTest.ConvertsArgumentWhenConverted (0 ms)
+[ RUN      ] ReturnTest.CanConvertArgumentUsingNonConstTypeCastOperator
+[       OK ] ReturnTest.CanConvertArgumentUsingNonConstTypeCastOperator (0 ms)
+[----------] 6 tests from ReturnTest (0 ms total)
+
+[----------] 1 test from ReturnNullTest
+[ RUN      ] ReturnNullTest.WorksInPointerReturningFunction
+[       OK ] ReturnNullTest.WorksInPointerReturningFunction (0 ms)
+[----------] 1 test from ReturnNullTest (0 ms total)
+
+[----------] 2 tests from ReturnRefTest
+[ RUN      ] ReturnRefTest.WorksForReference
+[       OK ] ReturnRefTest.WorksForReference (0 ms)
+[ RUN      ] ReturnRefTest.IsCovariant
+[       OK ] ReturnRefTest.IsCovariant (0 ms)
+[----------] 2 tests from ReturnRefTest (0 ms total)
+
+[----------] 4 tests from DoDefaultTest
+[ RUN      ] DoDefaultTest.ReturnsBuiltInDefaultValueByDefault
+[       OK ] DoDefaultTest.ReturnsBuiltInDefaultValueByDefault (0 ms)
+[ RUN      ] DoDefaultTest.ReturnsUserSpecifiedPerTypeDefaultValueWhenThereIsOne
+[       OK ] DoDefaultTest.ReturnsUserSpecifiedPerTypeDefaultValueWhenThereIsOne
+(0 ms)
+[ RUN      ] DoDefaultTest.DoesWhatOnCallSpecifies
+[       OK ] DoDefaultTest.DoesWhatOnCallSpecifies (0 ms)
+[ RUN      ] DoDefaultTest.CannotBeUsedInOnCall
+[       OK ] DoDefaultTest.CannotBeUsedInOnCall (0 ms)
+[----------] 4 tests from DoDefaultTest (0 ms total)
+
+[----------] 1 test from SetArgumentPointeeTest
+[ RUN      ] SetArgumentPointeeTest.SetsTheNthPointee
+[       OK ] SetArgumentPointeeTest.SetsTheNthPointee (0 ms)
+[----------] 1 test from SetArgumentPointeeTest (0 ms total)
+
+[----------] 3 tests from InvokeWithoutArgsTest
+[ RUN      ] InvokeWithoutArgsTest.Function
+[       OK ] InvokeWithoutArgsTest.Function (0 ms)
+[ RUN      ] InvokeWithoutArgsTest.Functor
+[       OK ] InvokeWithoutArgsTest.Functor (0 ms)
+[ RUN      ] InvokeWithoutArgsTest.Method
+[       OK ] InvokeWithoutArgsTest.Method (0 ms)
+[----------] 3 tests from InvokeWithoutArgsTest (0 ms total)
+
+[----------] 3 tests from IgnoreResultTest
+[ RUN      ] IgnoreResultTest.PolymorphicAction
+[       OK ] IgnoreResultTest.PolymorphicAction (0 ms)
+[ RUN      ] IgnoreResultTest.MonomorphicAction
+[       OK ] IgnoreResultTest.MonomorphicAction (0 ms)
+[ RUN      ] IgnoreResultTest.ActionReturningClass
+[       OK ] IgnoreResultTest.ActionReturningClass (0 ms)
+[----------] 3 tests from IgnoreResultTest (0 ms total)
+
+[----------] 3 tests from AssignTest
+[ RUN      ] AssignTest.Int
+[       OK ] AssignTest.Int (0 ms)
+[ RUN      ] AssignTest.String
+[       OK ] AssignTest.String (0 ms)
+[ RUN      ] AssignTest.CompatibleTypes
+[       OK ] AssignTest.CompatibleTypes (0 ms)
+[----------] 3 tests from AssignTest (0 ms total)
+
+[----------] 3 tests from SetErrnoAndReturnTest
+[ RUN      ] SetErrnoAndReturnTest.Int
+[       OK ] SetErrnoAndReturnTest.Int (0 ms)
+[ RUN      ] SetErrnoAndReturnTest.Ptr
+[       OK ] SetErrnoAndReturnTest.Ptr (0 ms)
+[ RUN      ] SetErrnoAndReturnTest.CompatibleTypes
+[       OK ] SetErrnoAndReturnTest.CompatibleTypes (0 ms)
+[----------] 3 tests from SetErrnoAndReturnTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1558 tests from 356 test cases ran. (2078 ms total)
+[  PASSED  ] 1539 tests.
+[  FAILED  ] 19 tests, listed below:
+[  FAILED  ] GtestCheckDeathTest.DiesWithCorrectOutputOnFailure
+[  FAILED  ] FloatTest.FloatEqApproximatelyMatchesFloats
+[  FAILED  ] FloatTest.NanSensitiveFloatEqApproximatelyMatchesFloats
+[  FAILED  ] FloatTest.FloatEqCannotMatchNaN
+[  FAILED  ] FloatTest.NanSensitiveFloatEqCanMatchNaN
+[  FAILED  ] FloatTest.FloatEqCanDescribeSelf
+[  FAILED  ] FloatTest.NanSensitiveFloatEqCanDescribeSelf
+[  FAILED  ] DoubleTest.DoubleEqApproximatelyMatchesDoubles
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqApproximatelyMatchesDoubles
+[  FAILED  ] DoubleTest.DoubleEqCannotMatchNaN
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqCanMatchNaN
+[  FAILED  ] DoubleTest.DoubleEqCanDescribeSelf
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqCanDescribeSelf
+[  FAILED  ] NoFatalFailureTest.ExpectNoFatalFailure
+[  FAILED  ] NoFatalFailureTest.AssertNoFatalFailure
+[  FAILED  ] XmlOutputTest.GetOutputFileFromDirectoryPath
+[  FAILED  ] OutputFileHelpersTest.GetCurrentExecutableName
+[  FAILED  ] XmlOutputChangeDirTest.PreserveOriginalWorkingDirWithRelativePath
+[  FAILED  ] XmlOutputChangeDirTest.PreserveOriginalWorkingDirWithAbsolutePath
+
+19 FAILED TESTS
+ YOU HAVE 13 DISABLED TESTS

@@ -1,0 +1,30 @@
+[----------] 3 tests from TestSuite
+[ RUN      ] TestSuite.ExpectedIsValueTest
+../src/sample1_unittest.cc:104: Failure
+Value of: Factorial(0)
+  Actual: 1
+Expected: 3
+[  FAILED  ] TestSuite.ExpectedIsValueTest
+[ RUN      ] TestSuite.ExpectedIsSymbolTest
+../src/sample1_unittest.cc:120: Failure
+Value of: Factorial(1)
+  Actual: "<crrap>"
+Expected: expected.str()
+Which is: "<orders>"
+[  FAILED  ] TestSuite.ExpectedIsSymbolTest
+[ RUN      ] TestSuite.StringEqTst
+../src/sample1_unittest.cc:125: Failure
+Value of: "Bob"
+Expected: "Harry"
+[  FAILED  ] TestSuite.StringEqTst
+[ RUN      ] TestSuite.SingleLineMessageTest
+../src/sample1_unittest.cc:130: Failure
+Expected: (1+1) != (1+1+0), actual: 2 vs 2
+[  FAILED  ] TestSuite.SingleLineMessageTest
+[ RUN      ] TestSuite.MultilineGenericMessage
+../src/sample1_unittest.cc:150: Failure
+The difference between 1+1 and 2+1 is 1, which exceeds 0.0001 + 0.0001, where
+1+1 evaluates to 2,
+2+1 evaluates to 3, and
+0.0001 + 0.0001 evaluates to 0.0002.
+[  FAILED  ] TestSuite.MultilineGenericMessage

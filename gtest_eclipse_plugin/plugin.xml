@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="gtest.eclipse.plugin.GTestLauncherDelegate"
+            id="ch.hsr.ifs.cutelauncher.launchConfig"
+            modes="run"
+            name="%launchConfigurationType.name.0"
+            />
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            icon="icons/gtest_app.gif"
+            configTypeID="ch.hsr.ifs.cutelauncher.launchConfig"
+            id="ch.hsr.ifs.cutelauncher.LaunchConfigImage">
+      </launchConfigurationTypeImage>
+  </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="ch.hsr.ifs.cutelauncher.CuteRunLaunchConfigTabGroup"
+            id="ch.hsr.ifs.cutelauncher.launchConfigurationTabGroup"
+            type="ch.hsr.ifs.cutelauncher.launchConfig"/>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+            label="%shortcut.label.0"
+            icon="icons/gtest_app.gif"
+            modes="run"
+            class="ch.hsr.ifs.cutelauncher.CuteLaunchShortcut"
+            id="ch.hsr.ifs.cutelauncher.cuteShortcut">
+         <contextualLaunch>
+           <enablement>
+             <with variable="selection">
+               <count value="1"/>
+               <iterate>
+                  <and>
+                  <!-- <test property="org.eclipse.debug.ui.matchesPattern" value="*.kmt"></test> -->
+                     <test
+                           forcePluginActivation="true"
+                           property="ch.hsr.ifs.projectNature1"
+                           value="ch.hsr.ifs.cutelauncher.cutenature">
+                     </test>
+                     <or>
+                        <test
+                              property="org.eclipse.cdt.launch.isExecutable">
+                        </test>
+                        <instanceof
+                              value="org.eclipse.cdt.core.model.ICProject">
+                        </instanceof>
+                        <instanceof
+                              value="org.eclipse.core.resources.IProject">
+                        </instanceof>
+                     </or>
+                  </and>
+               </iterate>
+             </with>
+           </enablement>
+           <contextLabel
+         	  mode="run"
+         	  label="%contextLabel.label.0"/>
+  		 </contextualLaunch>
+         <perspective
+               id="org.eclipse.cdt.ui.CPerspective">
+         </perspective>
+         <perspective
+               id="org.eclipse.debug.ui.DebugPerspective">
+         </perspective>
+      </shortcut>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="org.eclipse.cdt.ui.views"
+            class="ch.hsr.ifs.cutelauncher.ui.TestRunnerViewPart"
+            fastViewWidthRatio="0.5"
+            icon="icons/gtest_app.gif"
+            id="ch.hsr.ifs.cutelauncher.ui.TestRunnerViewPart"
+            name="%view.name.0"/>
+   </extension>
+   
+<!--   <extension-->
+<!--         id="cute wizard"-->
+<!--         name="cute wizard"-->
+<!--         point="org.eclipse.cdt.ui.CDTWizard">-->
+<!--      <wizard-->
+<!--            class="ch.hsr.ifs.cutelauncher.ui.NewCuteProjectWizard"-->
+<!--            name="CUTE">-->
+<!--      </wizard>-->
+<!--      <wizard-->
+<!--            class="ch.hsr.ifs.cutelauncher.ui.NewCuteLibProjectWizard"-->
+<!--            name="CUTE Library Test Project"-->
+<!--            parent="ch.hsr.ifs.cutelauncher.ui.NewCuteProjectWizard">-->
+<!--      </wizard>-->
+<!--    <wizard-->
+<!--          class="ch.hsr.ifs.cutelauncher.ui.NewCuteSuiteWizard"-->
+<!--          name="CUTE Suite Module"-->
+<!--          parent="ch.hsr.ifs.cutelauncher.ui.NewCuteProjectWizard">-->
+<!--    </wizard>-->
+<!--   </extension>-->
+    
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.eclipse.cdt.ui.preferences.CPluginPreferencePage"
+            class="ch.hsr.ifs.cutelauncher.ui.CutePrefPage"
+            id="ch.hsr.ifs.cutelauncher.prefPage"
+            name="%page.name.0">
+      </page>
+   </extension>
+   
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="ch.hsr.ifs.cutelauncher.ui.PreferenceInitializer">
+      </initializer>
+   </extension>
+   
+   <extension
+         id="ch.hsr.ifs.cutelauncher.cutenature"
+         name="CUTE Project Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="ch.hsr.ifs.cutelauncher.CuteNature">
+         </run>
+      </runtime>
+      <requires-nature
+            id="org.eclipse.cdt.core.cnature">
+      </requires-nature>
+   </extension>
+   
+   <extension
+         point="org.eclipse.mylyn.tasks.core.templates">
+      <repository
+            addAutomatically="true"
+            anonymous="true"
+            label="CUTE Trac"
+            repositoryKind="trac"
+            urlRepository="http://r2.ifs.hsr.ch/cute"
+            version="XML_RPC">
+      </repository>
+  </extension>
+   
+ <extension
+       point="org.eclipse.ui.ide.projectNatureImages">
+    <image
+          icon="icons/ovr16/cute_ovr.gif"
+          id="ch.hsr.ifs.cutelauncher.cuteProjectImage"
+          natureId="ch.hsr.ifs.cutelauncher.cutenature">
+    </image>
+ </extension>
+ 
+<!-- <extension-->
+<!--       point="org.eclipse.ui.popupMenus">-->
+<!--    <objectContribution-->
+<!--          adaptable="true"-->
+<!--          id="ch.hsr.ifs.cutelauncher.convertObjectContribution1"-->
+<!--          objectClass="org.eclipse.core.resources.IProject">-->
+<!--       <action-->
+<!--             class="ch.hsr.ifs.cutelauncher.ui.ConvertProjectAction"-->
+<!--             enablesFor="1"-->
+<!--             icon="icons/ovr16/cute_ovr.gif"-->
+<!--             id="ch.hsr.ifs.cutelauncher.convertProjectAction"-->
+<!--             label="Convert to CUTE 1.2 Project"-->
+<!--             menubarPath="additions">-->
+<!--             -->
+<!--       </action>-->
+<!--       <filter-->
+<!--             name="projectNature"-->
+<!--             value="org.eclipse.cdt.core.ccnature">-->
+<!--       </filter>-->
+<!--    </objectContribution>-->
+<!--    <viewerContribution-->
+<!--          id="ch.hsr.ifs.cutelauncher.cEditorContribution"-->
+<!--          targetID="#CEditorContext">-->
+<!--       <action-->
+<!--             class="ch.hsr.ifs.cutelauncher.ui.sourceactions.AddTestMembertoSuiteDelegate"-->
+<!--             definitionId="ch.hsr.ifs.cutelauncher.addTestMemberCommand"-->
+<!--             id="ch.hsr.ifs.cutelauncher.addTestMemberSuiteAction"-->
+<!--             label="Add Test Member to Suite"-->
+<!--             menubarPath="org.eclipse.cdt.ui.source.menu/addTestMenu/addTestGroup">-->
+<!--       </action>-->
+<!--       <action-->
+<!--             class="ch.hsr.ifs.cutelauncher.ui.sourceactions.AddTestFunctortoSuiteDelegate"-->
+<!--             definitionId="ch.hsr.ifs.cutelauncher.addTestFunctorCommand"-->
+<!--             id="ch.hsr.ifs.cutelauncher.addTestFunctorSuiteAction"-->
+<!--             label="Add Test Functor to Suite"-->
+<!--             menubarPath="org.eclipse.cdt.ui.source.menu/addTestMenu/addTestGroup">-->
+<!--       </action>-->
+<!--       <action-->
+<!--             class="ch.hsr.ifs.cutelauncher.ui.sourceactions.AddTestFunctiontoSuiteDelegate"-->
+<!--             definitionId="ch.hsr.ifs.cutelauncher.addTestFunctionCommand"-->
+<!--             id="ch.hsr.ifs.cutelauncher.addTestFunctionSuiteAction"-->
+<!--             label="Add Test Function to Suite"-->
+<!--             menubarPath="org.eclipse.cdt.ui.source.menu/addTestMenu/addTestGroup">-->
+<!--       </action>-->
+<!--       <action-->
+<!--             class="ch.hsr.ifs.cutelauncher.ui.sourceactions.NewTestFunctionActionDelegate"-->
+<!--             definitionId="ch.hsr.ifs.cutelauncher.newTestFunctionCommand"-->
+<!--             id="ch.hsr.ifs.cutelauncher.newTestFunctionAction"-->
+<!--             label="New Test Function"-->
+<!--             menubarPath="org.eclipse.cdt.ui.source.menu/ch.hsr.ifs.cutelauncher.testCodeMenu">-->
+<!--       </action>-->
+<!---->
+<!--       <menu-->
+<!--             id="ch.hsr.ifs.cutelauncher.testCodeMenu"-->
+<!--             label="Test Code"-->
+<!--             path="org.eclipse.cdt.ui.source.menu">-->
+<!--          <groupMarker-->
+<!--                name="ch.hsr.ifs.cutelauncher.testCodeMenu">-->
+<!--          </groupMarker>-->
+<!--       </menu>-->
+<!--       <menu-->
+<!--             id="addTestMenu"-->
+<!--             label="Add Test"-->
+<!--             path="org.eclipse.cdt.ui.source.menu/ch.hsr.ifs.cutelauncher.testCodeMenu">-->
+<!--          <groupMarker-->
+<!--                name="addTestGroup">-->
+<!--          </groupMarker>-->
+<!--       </menu>-->
+<!--       <action-->
+<!--             class="ch.hsr.ifs.cutelauncher.ui.sourceactions.Trigger"-->
+<!--             id="ch.hsr.ifs.cutelauncher.TriggerTest"-->
+<!--             label="TriggerTest(Development use)"-->
+<!--             menubarPath="org.eclipse.cdt.ui.source.menu/ch.hsr.ifs.cutelauncher.testCodeMenu">-->
+<!--       </action> -->
+<!---->
+<!--    </viewerContribution>-->
+<!-- </extension>-->
+
+<!-- <extension-->
+<!--       point="org.eclipse.ui.commands">-->
+<!--    <command-->
+<!--          categoryId="org.eclipse.cdt.ui.category.source"-->
+<!--          description="Create new test function."-->
+<!--          id="ch.hsr.ifs.cutelauncher.newTestFunctionCommand"-->
+<!--          name="New Test Function">-->
+<!--    </command>-->
+<!--    <command-->
+<!--          categoryId="org.eclipse.cdt.ui.category.source"-->
+<!--          description="Add existing test member to current Suite"-->
+<!--          id="ch.hsr.ifs.cutelauncher.addTestMemberCommand"-->
+<!--          name="Add Test Member to Suite">-->
+<!--    </command>-->
+<!--    <command-->
+<!--          categoryId="org.eclipse.cdt.ui.category.source"-->
+<!--          description="Add existing functor to current Suite"-->
+<!--          id="ch.hsr.ifs.cutelauncher.addTestFunctorCommand"-->
+<!--          name="Add Test Functor to Suite">-->
+<!--    </command>-->
+<!--    <command-->
+<!--          categoryId="org.eclipse.cdt.ui.category.source"-->
+<!--          description="Add existing function to current Suite"-->
+<!--          id="ch.hsr.ifs.cutelauncher.addTestFunctionCommand"-->
+<!--          name="Add Test Function to Suite">-->
+<!--    </command>-->
+<!-- </extension>-->
+ 
+<!-- <extension-->
+<!--       point="org.eclipse.ui.bindings">-->
+<!--    <key-->
+<!--          commandId="ch.hsr.ifs.cutelauncher.newTestFunctionCommand"-->
+<!--          contextId="org.eclipse.cdt.ui.cEditorScope"-->
+<!--          schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"-->
+<!--          sequence="M1+M3+F">-->
+<!--    </key>-->
+<!-- </extension>-->
+ 
+<!-- <extension-->
+<!--       point="org.eclipse.ui.actionSets">-->
+<!--    <actionSet-->
+<!--          id="ch.hsr.ifr.cutelauncher.sourceGeneratorActions"-->
+<!--          label="Test Source Actions"-->
+<!--          visible="true">-->
+<!--       <menu-->
+<!--             id="ch.hsr.ifs.cutelauncher.menu"-->
+<!--             label="Test Source Generators">-->
+<!--       </menu>-->
+<!--       <action-->
+<!--             class="ch.hsr.ifs.cutelauncher.ui.sourceactions.NewTestFunctionActionDelegate"-->
+<!--             definitionId="ch.hsr.ifs.cutelauncher.newTestFunctionCommand"-->
+<!--             id="ch.hsr.ifs.cutelauncher.newTestFunctionAction"-->
+<!--             label="New Test Function">-->
+<!--          -->
+<!--       </action>-->
+<!--    </actionSet>-->
+<!-- </extension>-->
+ 
+ <extension
+       point="org.eclipse.core.expressions.propertyTesters">
+    <propertyTester
+          class="ch.hsr.ifs.cutelauncher.ui.ProjectNaturePropertyTester"
+          id="ch.hsr.ifs.ProjectNaturePropertyTester"
+          namespace="ch.hsr.ifs"
+          properties="projectNature1"
+          type="org.eclipse.core.runtime.IAdaptable">
+    </propertyTester>
+ </extension>
+ 
+ <!--<extension
+       point="org.eclipse.ui.propertyPages">
+    <page
+          class="org.eclipse.ui.internal.ide.dialogs.ProjectReferencePage"
+          id="org.eclipse.ui.propertypages.project.reference"
+          name="Project ReferencesQQQQQQ">
+       <enabledWhen>
+          <adapt
+                type="org.eclipse.core.resources.IProject">
+          </adapt>
+       </enabledWhen>
+       <filter
+             name="projectNature"
+             value="ch.hsr.ifs.cutelauncher.cutenature">
+       </filter>
+    </page>
+ </extension>-->
+ 
+ <extension
+       id="cuteProblem"
+       name="Cute Problem"
+       point="org.eclipse.core.resources.markers">
+    <super
+          type="org.eclipse.core.resources.problemmarker">
+    </super>
+    <super
+          type="org.eclipse.core.resources.textmarker">
+    </super>
+    <persistent
+          value="false">
+    </persistent>
+ </extension>
+ 
+<!-- <extension-->
+<!--       point="org.eclipse.ui.newWizards">-->
+<!--    <wizard-->
+<!--          category="org.eclipse.cdt.ui.newCCWizards"-->
+<!--          finalPerspective="org.eclipse.cdt.ui.CPerspective"-->
+<!--          icon="icons/ovr16/cute_ovr.gif"-->
+<!--          id="cute_plugin.wizard1"-->
+<!--          name="Suite File">-->
+<!--    <class class="ch.hsr.ifs.cutelauncher.ui.NewSuiteFileCreationWizard">-->
+<!--            <parameter name="cfile" value="true"/>-->
+<!--         </class>-->
+<!--         <description>-->
+<!--            Adding new suite.-->
+<!--         </description>-->
+<!--    </wizard>-->
+<!-- </extension>-->
+ 
+  <extension
+       point="org.eclipse.ui.navigator.navigatorContent">
+    <commonWizard
+            associatedExtensionId="org.eclipse.cdt.ui.navigator.content"
+            menuGroupId="org.eclipse.cdt.ui"
+            type="new"
+            wizardId="cute_plugin.wizard1">
+		 <enablement>
+			<or>
+				<instanceof value="org.eclipse.cdt.core.model.ICElement" />	
+	            <adapt type="org.eclipse.core.resources.IProject">
+	               <test
+	                     property="org.eclipse.core.resources.projectNature"
+	                     value="org.eclipse.cdt.core.cnature"/>
+	            </adapt>
+			</or>
+         </enablement>
+	   </commonWizard>
+  </extension>	
+    
+ <!--
+ <extension
+       point="org.eclipse.core.expressions.propertyTesters">
+    <propertyTester
+          class="ch.hsr.ifs.cutelauncher.ui.ProjectNaturePropertyTester"
+          id="ch.hsr.ifs.cutelauncher.projectNatureTester"
+          namespace="ch.hsr.ifs.cutelauncher"
+          properties="isCuteProject"
+          type="org.eclipse.core.resources.natures">
+    </propertyTester>
+ </extension>
+ -->
+</plugin>

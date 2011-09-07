@@ -1,0 +1,2 @@
+#starting xUnitTest
+#error xUnitTest instance of 'std::exception'

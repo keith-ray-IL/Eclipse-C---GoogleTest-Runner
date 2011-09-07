@@ -1,0 +1,4 @@
+#starting ExpectedIsValueTest
+#failure ExpectedIsValueTest ../src/sample1_unittest.cc:104 Factorial(0) expected: 3 but was: 1
+#starting ExpectedIsSymbolTest
+#failure ExpectedIsSymbolTest ../src/sample1_unittest.cc:120 Factorial(1) expected: "<orders>" but was: "<crrap>"

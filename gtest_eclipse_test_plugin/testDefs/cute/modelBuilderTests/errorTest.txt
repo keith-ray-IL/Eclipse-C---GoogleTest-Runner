@@ -1,0 +1,3 @@
+Session{Testcase(xUnitTest, error, null, -1, Result(instance of 'std::exception'))}
+#starting xUnitTest
+#error xUnitTest instance of 'std::exception'

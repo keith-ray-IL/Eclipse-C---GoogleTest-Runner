@@ -1,0 +1,53 @@
+Running main() from gtest_main.cc
+[==========] Running 10 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from OneGreenTest
+[ RUN      ] OneGreenTest.AGreenTest
+dumping to std out
+[       OK ] OneGreenTest.AGreenTest
+[----------] 1 test from TypedTest/0, where TypeParam = TestType1
+[ RUN      ] TypedTest/0.typedTestOne
+[       OK ] TypedTest/0.typedTestOne
+[----------] 1 test from TypedTest/1, where TypeParam = TestType2
+[ RUN      ] TypedTest/1.typedTestTwo
+[       OK ] TypedTest/1.typedTestTwo
+[----------] 3 tests from ThreeRedTests
+[ RUN      ] ThreeRedTests.ExpectationFailedTest
+../src/sample2_unittest.cc:56: Failure
+Value of: ImBroken(4)
+  Actual: Red
+Expected: Green
+[  FAILED  ] ThreeRedTests.ExpectationFailedTest
+[ RUN      ] ThreeRedTests.ExplicitFailCallWithoutAMessageTest
+../src/sample1_unittest.cc:97: Failure
+Failed
+[  FAILED  ] ThreeRedTests.ExplicitFailCallWithoutAMessageTest
+[ RUN      ] ThreeRedTests.ExplicitFailCallWithAMessageTest
+../src/sample1_unittest.cc:110: Failure
+Failed
+This bugger was a direct call to FAIL.
+[  FAILED  ] ThreeRedTests.ExplicitFailCallWithAMessageTest
+[----------] 3 tests from ThreeGreenTests
+[ RUN      ] ThreeGreenTests.Negative
+[       OK ] ThreeGreenTests.Negative
+[ RUN      ] ThreeGreenTests.Zero
+[       OK ] ThreeGreenTests.Zero
+[ RUN      ] ThreeGreenTests.Positive
+[       OK ] ThreeGreenTests.Positive
+[----------] 3 tests from MixItUp
+[ RUN      ] MixItUp.Negative
+[       OK ] MixItUp.Negative
+[ RUN      ] MixItUp.Broken
+../src/sample1_unittest.cc:133: Failure
+Value of: IsPrime(4)
+  Actual: false
+Expected: true
+[  FAILED  ] MixItUp.Broken
+[ RUN      ] MixItUp.Positive
+[       OK ] MixItUp.Positive
+[----------] Global test environment tear-down
+[==========] 8 tests from 4 test cases ran.
+[  PASSED  ] 6 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] OneRedTest.ARedTest
+[  FAILED  ] MixItUp.Broken

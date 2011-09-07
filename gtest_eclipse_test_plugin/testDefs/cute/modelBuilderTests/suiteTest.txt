@@ -1,0 +1,5 @@
+Session{Suite(TestSuite1, success, 42, 0, 0, 0, 0){}Suite(TypedTest/0, where TypeParam = TestType, success, 1, 0, 0, 0, 0){}}
+#beginning TestSuite1 42
+#ending TestSuite1
+#beginning TypedTest/0, where TypeParam = TestType 1
+#ending TypedTest/0, where TypeParam = TestType

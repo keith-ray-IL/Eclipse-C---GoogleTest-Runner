@@ -1,0 +1,7 @@
+#starting xUnitTest
+#success xUnitTest OK
+#starting typedTestOne
+#success typedTestOne
+#starting detectTestEnd
+#success detectTestEnd OK
+

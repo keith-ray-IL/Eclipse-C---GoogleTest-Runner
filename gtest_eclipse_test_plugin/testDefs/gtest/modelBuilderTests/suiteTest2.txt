@@ -1,0 +1,5 @@
+Session{Suite(The Lib Suite, success, 1, 1, 1, 0, 0){Testcase(test, success, null, -1, Result(OK))}}
+#beginning The Lib Suite 1
+#starting test
+#success test OK
+#ending The Lib Suite

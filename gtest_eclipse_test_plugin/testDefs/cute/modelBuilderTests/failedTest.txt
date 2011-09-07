@@ -1,0 +1,3 @@
+Session{Testcase(xUnitTest, failure, null, 7, Result(false, null, null))}
+#starting xUnitTest
+#failure xUnitTest ../src/Test.cpp:7 false

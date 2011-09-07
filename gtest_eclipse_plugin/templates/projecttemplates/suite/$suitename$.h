@@ -1,0 +1,1 @@
+extern cute::suite make_suite_$suitename$();

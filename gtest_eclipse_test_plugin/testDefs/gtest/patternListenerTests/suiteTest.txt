@@ -1,0 +1,9 @@
+[==========] Running 51 tests from 4 test cases.
+[----------] 42 tests from TestSuite1
+[----------] 42 tests from TestSuite1 (58 ms total)
+[----------] 1 test from TypedTest/0, where TypeParam = TestType
+[----------] 3 tests from TestSuite3
+[----------] 5 tests from ContainerEqTest/0, where TypeParam =
+std::set<int, std::less<int>, std::allocator<int> >
+[----------] 5 tests from ContainerEqTest/0 (0 ms total)
+[==========] 51 tests from 4 test cases ran.

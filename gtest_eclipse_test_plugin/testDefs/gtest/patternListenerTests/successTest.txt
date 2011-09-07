@@ -1,0 +1,10 @@
+[----------] 1 test from TestSuite
+[ RUN      ] TestSuite.xUnitTest
+[       OK ] TestSuite.xUnitTest
+[----------] 1 test from TypedTest/0, where TypeParam = TestType
+[ RUN      ] TypedTest/0.typedTestOne
+[       OK ] TypedTest/0.typedTestOne
+[----------] 1 test from ConsoleCrrap
+[ RUN      ] ConsoleCrrap.detectTestEnd
+shatting some stupid console crrap
+[       OK ] ConsoleCrrap.detectTestEnd

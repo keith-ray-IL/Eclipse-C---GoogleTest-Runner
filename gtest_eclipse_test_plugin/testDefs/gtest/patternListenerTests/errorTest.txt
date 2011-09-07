@@ -1,0 +1,9 @@
+[----------] 2 tests from TestSuite
+[ RUN      ] TestSuite.xUnitOldGTest
+../src/gtest.cc:3627: Failure
+Failed
+exception of unknown type thrown.
+[ RUN      ] TestSuite.xUnitNewGTest
+unknown file: Failure
+Exception thrown St9exception in the test body.
+[  FAILED  ] TestSuite.xUnitNewGTest (1 ms)

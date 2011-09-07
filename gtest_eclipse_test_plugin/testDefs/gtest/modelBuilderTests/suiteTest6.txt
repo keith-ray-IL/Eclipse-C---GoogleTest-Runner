@@ -1,0 +1,19 @@
+Session{Suite(The Lib Suite, failure, 2, 2, 1, 1, 0){Testcase(test, success, null, -1, Result(OK))Testcase(test, failure, null, 7, Result(false, null, null))Suite(The Lib Suite, failure, 2, 2, 1, 1, 0){Testcase(test, success, null, -1, Result(OK))Testcase(test, failure, null, 7, Result(false, null, null))}}Suite(The Lib Suite, failure, 2, 2, 1, 1, 0){Testcase(test, success, null, -1, Result(OK))Testcase(test, failure, null, 7, Result(false, null, null))}}
+#beginning The Lib Suite 2
+#starting test
+#success test OK
+#starting test
+#failure test ../src/Test.cpp:7 false
+#beginning The Lib Suite 2
+#starting test
+#success test OK
+#starting test
+#failure test ../src/Test.cpp:7 false
+#ending The Lib Suite
+#ending The Lib Suite
+#beginning The Lib Suite 2
+#starting test
+#success test OK
+#starting test
+#failure test ../src/Test.cpp:7 false
+#ending The Lib Suite

@@ -1,0 +1,3 @@
+Session{Testcase(xUnitTest, success, null, -1, Result(OK))}
+#starting xUnitTest
+#success xUnitTest OK
